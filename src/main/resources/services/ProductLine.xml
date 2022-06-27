@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element>
+	<relationshipPattern>*</relationshipPattern>
+	<typePattern>Product Line,Model,Hardware Product,Logical Feature,Configuration Feature,Configuration Rules,Image,Reference Document,Routes</typePattern>
+	<getTo>false</getTo>
+	<getFrom>true</getFrom>
+	<recursionLevel>0</recursionLevel>
+	<limit>50</limit>
+	<tableName>EWC_PRODUCT_LINE</tableName>
+	<objectIdFlag>true</objectIdFlag>
+	<depthFlag>true</depthFlag>
+        <attributeConf>Attributes.conf,ExtensionAttributes.txt</attributeConf>
+        <additionalServices>Classification Path</additionalServices>
+</element>

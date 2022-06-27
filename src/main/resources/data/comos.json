@@ -1,0 +1,464 @@
+{
+    "status": "Success",
+    "message": null,
+    "data": {
+        "millId": "119160",
+        "equipmentId": "119160.135",
+        "comosModel": {
+            "id": "A48WDOO1P6",
+            "type": "Plant",
+            "code": "A1",
+            "hasChild": true,
+            "childs": [
+                {
+                    "id": "A48WSFMHC9",
+                    "type": "Unit",
+                    "code": "FG",
+                    "hasChild": true,
+                    "description": "Flue Gas System",
+                    "childs": [
+                        {
+                            "id": "A48WSFMNC9",
+                            "type": "SubUnit",
+                            "code": "FLC",
+                            "hasChild": true,
+                            "description": "Flue Gas Cooling",
+                            "childs": [
+                                {
+                                    "id": "A48WSFMOC9",
+                                    "type": "EquipmentCategory",
+                                    "code": "01",
+                                    "hasChild": true,
+                                    "childs": [
+                                        {
+                                            "id": "A48WSKLCC9",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "EnsLogicalEquipment",
+                                            "code": "FG-FLC-H04",
+                                            "level": "3",
+                                            "hasChild": true,
+                                            "childs": [
+                                                {
+                                                    "id": "A48WSI8NC9",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "RFLVPMLogicalReference",
+                                                    "code": "FG-FLC-H04-N02",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "142F054/N02",
+                                                        "descriptionInEnglish": "Flue gas output",
+                                                        "descriptionInCustomerLang": "Savukaaasu ulos",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                }
+                                            ],
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "RA2045",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": "142F054",
+                                                "descriptionInEnglish": "Flue gas cooler 4",
+                                                "descriptionInCustomerLang": "Savukaasun jäähdytin 4",
+                                                "contractDeliverableId": "A4F2L14UBY"
+                                            }
+                                        }, {
+                                            "id": "A48WSMCAC9",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "EnsLogicalEquipment",
+                                            "code": "FG-FLC-P01",
+                                            "level": "3",
+                                            "hasChild": true,
+                                            "childs": [
+                                                {
+                                                    "id": "A48WSS0GC9",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "RFLVPMLogicalReference",
+                                                    "code": "FG-FLC-P01-N01",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "142P009/N01",
+                                                        "descriptionInEnglish": "Suction nozzle",
+                                                        "descriptionInCustomerLang": "Imuyhde",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                }, {
+                                                    "id": "A48WSTBIC9",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "RFLVPMLogicalReference",
+                                                    "code": "FG-FLC-P01-N02",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "142P009/N02",
+                                                        "descriptionInEnglish": "Discharge nozzle",
+                                                        "descriptionInCustomerLang": "Poistoyhde",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                }
+                                            ],
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "251501",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": "142P009",
+                                                "descriptionInEnglish": "Flue gas cooling circulation pump",
+                                                "descriptionInCustomerLang": "SK-jäähdytin kiertopumppu",
+                                                "contractDeliverableId": "A4F2L0JSBY"
+                                            }
+                                        },
+                                        {
+                                            "id": "A4FO3K0KYM",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                            "code": "AH-ALE-A01-M01",
+                                            "level": "3",
+                                            "hasChild": false,
+                                            "childs": null,
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": null,
+                                                "subProject": null,
+                                                "customerDevicePosition": "=142B008A-M1",
+                                                "descriptionInEnglish": "Motor",
+                                                "descriptionInCustomerLang": "?2?Moottori",
+                                                "contractDeliverableId": null
+                                            }
+                                        }
+                                    ]
+                                }, {
+                                    "id": "A49VAM8O2O",
+                                    "type": "ValveCategory",
+                                    "code": "02",
+                                    "hasChild": true,
+                                    "childs": [
+                                        {
+                                            "id": "A49VAOQX2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "Piping_Logical_Valve",
+                                            "code": "FG-FLC-V073",
+                                            "level": "3",
+                                            "hasChild": false,
+                                            "childs": null,
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "255001",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": "142V0733",
+                                                "descriptionInEnglish": "Hand valve",
+                                                "descriptionInCustomerLang": "Käsiventtiili",
+                                                "contractDeliverableId": "A4F2L0I6BY"
+                                            }
+                                        }, {
+                                            "id": "A49VAOUR2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "Piping_Logical_Valve",
+                                            "code": "FG-FLC-V069",
+                                            "level": "3",
+                                            "hasChild": false,
+                                            "childs": null,
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "255001",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": "142V0769",
+                                                "descriptionInEnglish": "Hand valve",
+                                                "descriptionInCustomerLang": "Käsiventtiili",
+                                                "contractDeliverableId": "A4F2L0I6BY"
+                                            }
+                                        },
+                                        {
+                                            "id": "A49VBDAO2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                            "code": "FG-FLC-V058",
+                                            "level": "3",
+                                            "hasChild": false,
+                                            "childs": null,
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "255502",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": "142V0828",
+                                                "descriptionInEnglish": "Safety valve",
+                                                "descriptionInCustomerLang": "Varoventtiili",
+                                                "contractDeliverableId": "A4F2L2OZBY"
+                                            }
+                                        }
+                                    ]
+                                }, {
+                                    "id": "A48WSGQPC9",
+                                    "type": "PipeCategory",
+                                    "code": "03",
+                                    "hasChild": true,
+                                    "childs": [
+                                        {
+                                            "id": "A48WSGQQC9",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalSystemReference",
+                                            "code": "FG-FLC-007",
+                                            "level": "3",
+                                            "hasChild": true,
+                                            "childs": [
+                                                {
+                                                    "id": "A49VBARH2O",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "Piping_Line",
+                                                    "code": "FG-FLC-007-B400",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "1420472",
+                                                        "descriptionInEnglish": "Instrument connection",
+                                                        "descriptionInCustomerLang": "Instrumenttiyhde",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                }, {
+                                                    "id": "A49VBB0Q2O",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "Piping_Line",
+                                                    "code": "FG-FLC-007-B301",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "1420472",
+                                                        "descriptionInEnglish": "Bypass",
+                                                        "descriptionInCustomerLang": "Ohitus",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                }, {
+                                                    "id": "A49VAY57DN",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "HVAC_Line",
+                                                    "code": "FG-FLC-007-B302",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "1422085",
+                                                        "descriptionInEnglish": "Flue gas from ESP 1",
+                                                        "descriptionInCustomerLang": "Savukaasu sähkösuodattimelta 1",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                }, {
+                                                    "id": "A49VBAD72O",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "HVAC_Line",
+                                                    "code": "FG-FLC-007-B303",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": null,
+                                                        "subProject": null,
+                                                        "customerDevicePosition": "1422085",
+                                                        "descriptionInEnglish": "Instrument connection",
+                                                        "descriptionInCustomerLang": "Instrumenttiyhde",
+                                                        "contractDeliverableId": null
+                                                    }
+                                                },
+                                                {
+                                                    "id": "A48WSHB0C9",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "RFLVPMLogicalReference",
+                                                    "code": "FG-EP4-C003",
+                                                    "level": "3",
+                                                    "hasChild": true,
+                                                    "childs": [
+                                                        {
+                                                            "id": "A49VAYF8DN",
+                                                            "type": "DevicePosition",
+                                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                                            "code": "FG-EP4-C003-B1",
+                                                            "level": "4",
+                                                            "hasChild": false,
+                                                            "childs": null,
+                                                            "attributes": {
+                                                                "partNumber": null,
+                                                                "wbsActivity": null,
+                                                                "subProject": null,
+                                                                "customerDevicePosition": null,
+                                                                "descriptionInEnglish": "Ash from ESP 4 cross conveyor",
+                                                                "descriptionInCustomerLang": "Tuhka sähkös. 4 poikittaiskuljettimelta",
+                                                                "contractDeliverableId": null
+                                                            }
+                                                        }
+                                                    ],
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": "251506",
+                                                        "subProject": "H0010AEJ1",
+                                                        "customerDevicePosition": null,
+                                                        "descriptionInEnglish": "Ash from ESP 4 cross conveyor",
+                                                        "descriptionInCustomerLang": "Tuhka sähkös. 4 poikittaiskuljettimelta",
+                                                        "contractDeliverableId": "A4HIIZ12RN"
+                                                    }
+                                                }
+                                            ],
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "253501",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": "1420472",
+                                                "descriptionInEnglish": "FG cooling circulation water",
+                                                "descriptionInCustomerLang": "Savuk. jäähdytyksen kiertovesi",
+                                                "contractDeliverableId": "A4F2KY9ABY"
+                                            }
+                                        }
+                                    ]
+                                }, {
+                                    "id": "A49VAM8X2O",
+                                    "type": "InstrumentAndControlCategory",
+                                    "code": "04",
+                                    "hasChild": true,
+                                    "childs": [
+                                        {
+                                            "id": "A49VAQYN2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                            "code": "FG-FLC-T0025",
+                                            "level": "3",
+                                            "hasChild": true,
+                                            "childs": [
+                                                {
+                                                    "id": "A49VB10U2O",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "RFLVPMLogicalReference",
+                                                    "code": "FG-FLC-TI0025",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": "256007",
+                                                        "subProject": "H0010ARA1",
+                                                        "customerDevicePosition": null,
+                                                        "descriptionInEnglish": "PAP circulation water temperature",
+                                                        "descriptionInCustomerLang": "PIL esilämmittimen kiertoveden paluu",
+                                                        "contractDeliverableId": "A4FUVT6A0C"
+                                                    }
+                                                }
+                                            ],
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": null,
+                                                "subProject": null,
+                                                "customerDevicePosition": "=142A1215-TI",
+                                                "descriptionInEnglish": "PAP circulation water temperature",
+                                                "descriptionInCustomerLang": "PIL esilämmittimen kiertoveden paluu",
+                                                "contractDeliverableId": null
+                                            }
+                                        }, {
+                                            "id": "A49VAVZL2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                            "code": "FG-FLC-T0027",
+                                            "level": "3",
+                                            "hasChild": true,
+                                            "childs": [
+                                                {
+                                                    "id": "A49VAS262O",
+                                                    "type": "DevicePosition",
+                                                    "3DxObjectType": "RFLVPMLogicalReference",
+                                                    "code": "FG-FLC-TI0027",
+                                                    "level": "4",
+                                                    "hasChild": false,
+                                                    "childs": null,
+                                                    "attributes": {
+                                                        "partNumber": null,
+                                                        "wbsActivity": "256007",
+                                                        "subProject": "H0010ARA1",
+                                                        "customerDevicePosition": null,
+                                                        "descriptionInEnglish": "HSAP circulation water temperature",
+                                                        "descriptionInCustomerLang": "YläSIL esilämmittimen jälkeen kiertoveden paluu lämpötila",
+                                                        "contractDeliverableId": "A4FUVT6A0C"
+                                                    }
+                                                }
+                                            ],
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": null,
+                                                "subProject": null,
+                                                "customerDevicePosition": "=142A1235-TI",
+                                                "descriptionInEnglish": "HSAP circulation water temperature",
+                                                "descriptionInCustomerLang": "YläSIL esilämmittimen jälkeen kiertoveden paluu lämpötila",
+                                                "contractDeliverableId": null
+                                            }
+                                        }
+                                    ]
+                                }, {
+                                    "id": "A49VAMA82O",
+                                    "type": "PipingComponentsCategory",
+                                    "code": "05",
+                                    "hasChild": true,
+                                    "childs": [
+                                        {
+                                            "id": "A49VAS6E2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                            "code": "FG-FLC-X031",
+                                            "level": "3",
+                                            "hasChild": false,
+                                            "childs": null,
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "253501",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": null,
+                                                "descriptionInEnglish": "Drain",
+                                                "descriptionInCustomerLang": "Tyhjennys",
+                                                "contractDeliverableId": "A4F2L2XKBY"
+                                            }
+                                        }, {
+                                            "id": "A49VAXEP2O",
+                                            "type": "DevicePosition",
+                                            "3DxObjectType": "RFLVPMLogicalReference",
+                                            "code": "FG-FLC-X032",
+                                            "level": "3",
+                                            "hasChild": false,
+                                            "childs": null,
+                                            "attributes": {
+                                                "partNumber": null,
+                                                "wbsActivity": "253501",
+                                                "subProject": "H0010ARA1",
+                                                "customerDevicePosition": null,
+                                                "descriptionInEnglish": "Drain",
+                                                "descriptionInCustomerLang": "Tyhjennys",
+                                                "contractDeliverableId": "A4F2L2XKBY"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

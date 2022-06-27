@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mailTemplateMapper>
+    <applications>
+        <application type="RnP">
+            <templates>
+                <template type="success">Hello, Background Process for large report has been completed for this item. Report download link : Thanks. This email may contain confidential and/or legally privileged information. For any mismatch , please inform concern person immediately</template>
+            </templates>
+        </application>
+    </applications>
+</mailTemplateMapper>

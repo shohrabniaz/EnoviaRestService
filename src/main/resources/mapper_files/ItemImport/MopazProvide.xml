@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Provide">
+            <runTimeInterfaceList>DELAsmUnitRefRequired,DELAsmLotRefRequired,TRS_TermID,TRS_ShortEnglish,MBOM_MBOMERP,MBOM_MBOMReference,TD_TechnicalDesignation</runTimeInterfaceList>
+            <attributes>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>current</destination_name>
+                    <values defaultValue="RELEASED">
+                        <value src="RELEASED">RELEASED</value>
+                        <value src="OBSOLETE">OBSOLETE</value>
+                        <value src="IN_WORK">IN_WORK</value>
+                        <value src="PRIVATE">PRIVATE</value>
+                        <value src="FROZEN">FROZEN</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>project</source_name>
+                    <destination_name>project</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>owner</source_name>
+                    <destination_name>owner</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Description</source_name>
+                    <destination_name>description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Serialized</source_name>
+                    <destination_name>DELAsmUnitRefRequired.V_SerialNumberRequired</destination_name>
+                    <values defaultValue="FALSE">
+                        <value src="FALSE">FALSE</value>
+                        <value src="TRUE">TRUE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Lot Number</source_name>
+                    <destination_name>DELAsmLotRefRequired.V_LotNumberRequired</destination_name>
+                    <values defaultValue="FALSE">
+                        <value src="TRUE">TRUE</value>
+                        <value src="FALSE">FALSE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Weight</source_name>
+                    <destination_name>DELFmiFunctionPPRCreateReference.V_EstimatedWeight</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Bundle ID</source_name>
+                    <destination_name>TRS_TermID.TRS_TermID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Short name in English</source_name>
+                    <destination_name>TRS_ShortEnglish.TRS_ShortNameEnglish</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Technical designation</source_name>
+                    <destination_name>TD_TechnicalDesignation.TD_TechnicalDesignation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length paddingChar="...">100</data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Item Manufacturing Text</source_name>
+                    <destination_name>PLMEntity.V_description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Title in English</source_name>
+                    <destination_name>PLMEntity.V_Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Change information</source_name>
+                    <destination_name>PLMReference.V_versionComment</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Standard part</source_name>
+                    <destination_name>MBOM_MBOMReference.MBOM_Type</destination_name>
+                    <values defaultValue="Project_Specific">
+                        <value src="Project_Specific">Project_Specific</value>
+                        <value src="Product_Model">Product_Model</value>
+                        <value src="Standard">Standard</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Commodity code ch</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Commodity_Code_CH</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Commodity code us</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Commodity_Code_US</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Commodity code eu</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Commodity_Code_EU</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Release Purpose</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Release_Purpose</destination_name>
+                    <values defaultValue="Production">
+                        <value src="Production">Production</value>
+                        <value src="Planning">Planning</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>This field is not a mapping of PDM. It is only for Enovia V6 attribute mapping</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Transferred to ERPs</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_TransferredtoERP</destination_name>
+                    <values defaultValue="false">
+                        <value src="true">true</value>
+                        <value src="false">false</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Reference item</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_ReferenceItem</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+<!--                <attribute>-->
+<!--                    <source_name>LEG Drawing Number</source_name>-->
+<!--                    <destination_name>LEG_DrawingNumber.LEG_Drawing_Number</destination_name>-->
+<!--                    <data-type>String</data-type>-->
+<!--                    <data-format></data-format>-->
+<!--                    <lazy-interface>-->
+<!--                        <request-has-value>true</request-has-value>-->
+<!--                        &lt;!&ndash;<is-value reverse="true">Positive</is-value>-->
+<!--                        <set-value>DesiredValue</set-value>&ndash;&gt;-->
+<!--                        <interfaces>LEG_DrawingNumber</interfaces>-->
+<!--                    </lazy-interface>-->
+<!--                    <description></description>-->
+<!--                    <data_length></data_length>-->
+<!--                    <is_required></is_required>-->
+<!--                    <selectable></selectable>-->
+<!--                    <insertable></insertable>-->
+<!--                </attribute>-->
+                <attribute>
+                    <source_name>LEG Legacy Code</source_name>
+                    <destination_name>LEG_LegacyCode.LEG_Legacy_Code</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <lazy-interface>
+                        <request-has-value>true</request-has-value>
+                        <!--<is-value reverse="true">Positive</is-value>
+                        <set-value>DesiredValue</set-value>-->
+                        <interfaces>LEG_LegacyCode</interfaces>
+                    </lazy-interface>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>LEG Trade mark</source_name>
+                    <destination_name>LEG_Trademark.LEG_Trade_Mark</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <lazy-interface>
+                        <request-has-value>true</request-has-value>
+                        <!--<is-value reverse="true">Positive</is-value>
+                        <set-value>DesiredValue</set-value>-->
+                        <interfaces>LEG_Trademark</interfaces>
+                    </lazy-interface>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>LEG Trade mark new</source_name>
+                    <destination_name>LEG_Trademark.LEG_TradeMark_New</destination_name>
+                    <values>
+                        <value src=""></value>
+                        <value src="AttackBar-segment">AttackBar-segment</value>
+                        <value src="SoftBar-segment">SoftBar-segment</value>
+                        <value src="SteamLock-segment">SteamLock-segment</value>
+                        <value src="SuperFeed-segment">SuperFeed-segment</value>
+                        <value src="SuperMaxFeed-segment">SuperMaxFeed-segment</value>
+                        <value src="SuperTriMaxFeed-segment">SuperTriMaxFeed-segment</value>
+                        <value src="TriMaxFeed-segment">TriMaxFeed-segment</value>
+                        <value src="Turbine-segment">Turbine-segment</value>
+                        <value src="UDI-N-segment">UDI-N-segment</value>
+                        <value src="UDI-segment">UDI-segment</value>
+                        <value src="UltraDef-segment">UltraDef-segment</value>
+                        <value src="UniFib-segment">UniFib-segment</value>
+                        <value src="VarioGroove-segment">VarioGroove-segment</value>
+                        <value src="WearCap-segment">WearCap-segment</value>
+                        <value src="Zebra-segment">Zebra-segment</value>
+                        <value src="DefiMax-segment">DefiMax-segment</value>
+                        <value src="EdgeLock-segment">EdgeLock-segment</value>
+                        <value src="EquaLock-segment">EquaLock-segment</value>
+                        <value src="FlatFeed-segment">FlatFeed-segment</value>
+                        <value src="FreeFlow-segment">FreeFlow-segment</value>
+                        <value src="HighFib-segment">HighFib-segment</value>
+                        <value src="HoldBack-segment">HoldBack-segment</value>
+                        <value src="LowShive-segment">LowShive-segment</value>
+                        <value src="MaxFeed-segment">MaxFeed-segment</value>
+                        <value src="Maxiflo-segment">Maxiflo-segment</value>
+                        <value src="MicroBar-segment">MicroBar-segment</value>
+                        <value src="MultipleEdge-segment">MultipleEdge-segment</value>
+                        <value src="Selective-segment">Selective-segment</value>
+                        <value src="ShiveClean-segment">ShiveClean-segment</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <lazy-interface>
+                        <request-has-value>true</request-has-value>
+                        <!--<is-value reverse="true">Positive</is-value>
+                        <set-value>DesiredValue</set-value>-->
+                        <interfaces>LEG_Trademark</interfaces>
+                    </lazy-interface>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Item Common Text</source_name>
+                    <destination_name>ITMTEXTS_ItemCommonText.ITMTEXTS_ItemCommonText</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <lazy-interface>
+                        <request-has-value>true</request-has-value>
+                        <!--<is-value reverse="true">Positive</is-value>
+                        <set-value>DesiredValue</set-value>-->
+                        <interfaces>ITMTEXTS_ItemCommonText</interfaces>
+                    </lazy-interface>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Item Purchasing Text</source_name>
+                    <destination_name>ITEMTEXTS_PurchasingText.ITEMTEXTS_PurchasingText</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <lazy-interface>
+                        <request-has-value>true</request-has-value>
+                        <!--<is-value reverse="true">Positive</is-value>
+                        <set-value>DesiredValue</set-value>-->
+                        <interfaces>ITEMTEXTS_PurchasingText</interfaces>
+                    </lazy-interface>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>External Id</source_name>
+                    <destination_name>PLMEntity.PLM_ExternalID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name></source_name>
+                    <destination_name>PLMEntity.V_discipline</destination_name>
+                    <values defaultValue="Provide"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

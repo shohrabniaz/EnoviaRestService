@@ -1,0 +1,325 @@
+#compare-pdm {
+    height: 100%;
+}
+
+#drop-targets {
+    height: 100%;
+}
+
+#left-container {
+    height: 100%;
+    padding: 20px;
+}
+
+#left-drop-target {
+    height: 100%;
+    width: 100%;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #ddd9d9;
+    border-radius: 15px;
+}
+
+#drop-target-left-iconlabel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ccc;
+    text-align: center;
+}
+
+#right-container {
+    height: 100%;
+    padding: 20px;
+}
+
+.tree_headers {
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 3px;
+}
+
+.fancytree-icon {
+    background-image: none !important;
+}
+
+.right-only {
+    background-color: yellowgreen !important;
+}
+
+.left-only {
+    background-color: red !important;
+}
+
+.more {
+    background-color: purple !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.less {
+    background-color: yellow !important;
+    font-weight: bold !important;
+}
+
+table.fancytree-ext-table tbody tr.fancytree-active {
+    background-color: transparent !important;
+}
+
+table.fancytree-ext-table tbody tr.fancytree-focused {
+    background-color: #cff9ff !important;
+}
+
+
+/* .title-field {
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+}
+
+.revision-field {
+width: 200px;
+min-width: 200px;
+}
+
+.position-field {
+width: 200px;
+min-width: 200px;
+}
+
+.level-field {
+width: 200px;
+min-width: 200px;
+}
+
+.quantity-field {
+width: 200px;
+min-width: 200px;
+} */
+
+body {
+    font-size: 1.25rem !important;
+}
+
+.btn {
+    font-size: 1.25rem !important;
+}
+
+.form-control {
+    font-size: 1.25rem !important;
+    height: calc(2.6rem + 2px) !important;
+}
+
+span.fancytree-title {
+    padding: 2px 2px 2px 2px !important;
+    margin: 0px !important;
+}
+
+.table td,
+.table th {
+    padding: .35rem 0.75rem !important;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    font-size: 1.15rem !important;
+}
+
+.pagination-sm .page-link {
+    font-size: 1.25rem !important;
+}
+
+span.fancytree-empty,
+span.fancytree-vline,
+span.fancytree-expander,
+span.fancytree-icon,
+span.fancytree-checkbox,
+span.fancytree-radio,
+span.fancytree-drag-helper-img,
+#fancytree-drop-marker {
+    margin-top: 4px !important;
+}
+
+ul.fancytree-connectors.fancytree-container li {
+    background-image: url("vline.gif");
+    background-position: 0 0;
+}
+
+ul.fancytree-container li.fancytree-lastsib,
+ul.fancytree-no-connector>li {
+    background-image: none;
+}
+
+.fancytree-connectors .fancytree-exp-n span.fancytree-expander,
+.fancytree-connectors .fancytree-exp-nl span.fancytree-expander {
+    background-image: url("icons.gif");
+    margin-top: 0;
+}
+
+.fancytree-connectors .fancytree-exp-n span.fancytree-expander,
+.fancytree-connectors .fancytree-exp-n span.fancytree-expander:hover {
+    background-position: 0px -64px;
+}
+
+.fancytree-connectors .fancytree-exp-nl span.fancytree-expander,
+.fancytree-connectors .fancytree-exp-nl span.fancytree-expander:hover {
+    background-position: -16px -64px;
+}
+
+.fancytree-container.fancytree-rtl span.fancytree-connector,
+.fancytree-container.fancytree-rtl span.fancytree-expander,
+.fancytree-container.fancytree-rtl span.fancytree-icon,
+.fancytree-container.fancytree-rtl span.fancytree-drag-helper-img {
+    background-image: url("icons-rtl.gif");
+}
+
+.fancytree-container.fancytree-rtl .fancytree-exp-n span.fancytree-expander,
+.fancytree-container.fancytree-rtl .fancytree-exp-nl span.fancytree-expander {
+    background-image: none;
+}
+
+.fancytree-container.fancytree-rtl.fancytree-connectors .fancytree-exp-n span.fancytree-expander,
+.fancytree-container.fancytree-rtl.fancytree-connectors .fancytree-exp-nl span.fancytree-expander {
+    background-image: url("icons-rtl.gif");
+}
+
+ul.fancytree-container.fancytree-rtl ul {
+    padding: 0 16px 0 0;
+}
+
+ul.fancytree-container.fancytree-rtl.fancytree-connectors li {
+    background-position: right 0;
+    background-image: url("vline-rtl.gif");
+}
+
+ul.fancytree-container.fancytree-rtl li.fancytree-lastsib,
+ul.fancytree-container.fancytree-rtl.fancytree-no-connector>li {
+    background-image: none;
+}
+
+table.fancytree-container thead {
+    line-height: 1.6rem !important;
+}
+
+table.fancytree-container tbody tr td span {
+    vertical-align: middle !important;
+}
+
+table.fancytree-container tbody tr td span span {
+    vertical-align: middle !important;
+}
+
+table.fancytree-ext-table tbody tr.fancytree-selected {
+    background-color: #e4fdff !important;
+}
+
+.alert {
+    height: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    border: 0px solid transparent !important;
+    border-radius: 0px !important;
+}
+
+#project-panel {
+    font-size: 12px !important;
+}
+
+.panel-heading {
+    padding: 5px 15px !important;
+}
+
+.panel-title {
+    margin-top: 5px !important;
+    font-size: 13px !important;
+}
+
+.panel-body {
+    padding: 8px !important;
+}
+
+#importButton {
+    padding: 4px 12px !important;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    padding: 4px 12px !important;
+}
+
+#activity-tree {
+    font-size: 11px !important;
+    margin-bottom: 0px !important;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+#DataTable-Widget {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.form-group .form-control {
+    margin: 0px 0 !important;
+}
+
+.form-group {
+    margin-bottom: 0px !important;
+}
+
+.panel {
+    margin-bottom: 0px !important;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report>
+	<report-name>Engineering BOM Multi Level</report-name>
+	<template-lang>English</template-lang>
+	<drawing-info>no</drawing-info>
+	<summary-report>yes</summary-report>
+	<format>pdf</format>
+	<level>99</level>
+        <printStartEndPage>false</printStartEndPage>
+</report>

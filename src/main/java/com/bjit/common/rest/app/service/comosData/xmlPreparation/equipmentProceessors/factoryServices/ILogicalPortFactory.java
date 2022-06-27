@@ -1,0 +1,7 @@
+package com.bjit.common.rest.app.service.comosData.xmlPreparation.equipmentProceessors.factoryServices;
+
+import com.bjit.common.rest.app.service.comosData.xmlPreparation.model.equipment.EquipmentChild;
+
+public interface ILogicalPortFactory {
+    EquipmentChild getLogicalPort(EquipmentChild parent, EquipmentChild child);
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Enovia Rest Log Service</title>
+    </head>
+    <body>
+
+        <span th:utext="${logHtmlData}"></span>
+        <span th:text="${logTxtData}" th:remove="tag"></span>
+
+    </body>
+</html>

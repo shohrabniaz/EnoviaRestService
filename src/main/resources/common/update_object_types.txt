@@ -1,0 +1,9 @@
+#allowed types for update
+Product Line
+Logical Feature
+Configuration Feature
+Manufacturing Feature
+Hardware Product
+Software Product
+Service Product
+Model

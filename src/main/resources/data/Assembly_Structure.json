@@ -1,0 +1,163 @@
+{
+	"status": "Success",
+	"message": null,
+	"data": {
+		"millId": "621469",
+		"millHierarchyId": "EQ383",
+		"equipmentId": "621469.017",
+		"comosModel": {
+			"id": "A4EXZVQMJZ",
+			"type": "Plant",
+			"code": "B1",
+			"description": "Power Boiler Plant",
+			"hasChild": true,
+			"childs": [
+				{
+					"id": "A4EXZW57JZ",
+					"type": "SubProject",
+					"code": "H1033AEA1",
+					"description": "BFB Boilers (EA) 211230 M1 S1",
+					"hasChild": true,
+					"childs": [
+						{
+							"id": "A4MUGCM4SQ",
+							"type": "MainProduct",
+							"code": "BFB",
+							"description": "BFB Boilers",
+							"hasChild": true,
+							"childs": [
+								{
+									"id": "A4MUWTHI5B",
+									"type": "ProductFamily",
+									"code": "AP",
+									"description": "Auxiliary Steam",
+									"hasChild": true,
+									"childs": [
+										{
+											"id": "A4MUX0HB5B",
+											"type": "Product",
+											"code": "CND",
+											"description": "Condensate",
+											"hasChild": true,
+											"childs": [
+												{
+													"id": "A4LQPV2RP3",
+													"type": "LogicalAssembly",
+													"code": "H1016AEA1-BFB-AP-CND-AS01",
+													"descriptionEng": "Collection funnel module",
+													"descriptionCust": null,
+													"hasChild": true,
+													"childs": [
+														{
+															"id": "A4EY0HAJ07",
+															"type": "DevicePosition",
+															"3DxObjectType": "RFLVPMLogicalSystemReference",
+															"code": "AP-CND-081",
+															"attributes": {
+																"partNumber": null,
+																"wbsActivity": "EA0585",
+																"customerDevicePosition": null,
+																"descriptionInEnglish": "Air collection funnel pipe",
+																"descriptionInCustomerLang": "Ilmanpoistojen kokoojan putki",
+																"contractDeliverableId": "A4EY0HAP07"
+															}
+														},
+														{
+															"id": "A4EY15DH07",
+															"type": "DevicePosition",
+															"3DxObjectType": "EnsLogicalEquipment",
+															"code": "AP-CND-E01",
+															"attributes": {
+																"partNumber": null,
+																"wbsActivity": "EA0585",
+																"customerDevicePosition": null,
+																"descriptionInEnglish": "Air collection funnel",
+																"descriptionInCustomerLang": "Ilmanpoistojen kokooja",
+																"contractDeliverableId": "A4EY0HAP07"
+															}
+														},
+														{
+															"id": "A4EY229G07",
+															"type": "DevicePosition",
+															"3DxObjectType": "Piping_Logical_Valve",
+															"code": "AP-CND-V115",
+															"attributes": {
+																"partNumber": null,
+																"wbsActivity": "255001",
+																"customerDevicePosition": null,
+																"descriptionInEnglish": "Hand valve",
+																"descriptionInCustomerLang": "Handventil",
+																"contractDeliverableId": "A4EY1PHO07"
+															}
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"id": "A4MUJ4H7SQ",
+									"type": "ProductFamily",
+									"code": "FH",
+									"description": "Fuel Handling System",
+									"hasChild": true,
+									"childs": [
+										{
+											"id": "A4MUKUNISQ",
+											"type": "LogicalAssembly",
+											"code": "H1016AEA1-BFB-FH-AS01",
+											"descriptionEng": "Project assembly",
+											"descriptionCust": null,
+											"hasChild": true,
+											"childs": [
+												{
+													"id": "A4EY2G0K07",
+													"type": "DevicePosition",
+													"3DxObjectType": "EnsLogicalEquipment",
+													"code": "FH-SNF-T06",
+													"attributes": {
+														"partNumber": null,
+														"wbsActivity": "",
+														"customerDevicePosition": null,
+														"descriptionInEnglish": "Sand silo",
+														"descriptionInCustomerLang": "",
+														"contractDeliverableId": ""
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"id": "A4MUVN2KEE",
+									"type": "LogicalAssembly",
+									"code": "H1016AEA1-BFB-AS01",
+									"descriptionEng": "Boiler",
+									"descriptionCust": null,
+									"hasChild": true,
+									"childs": [
+										{
+											"id": "A4EY1OY707",
+											"type": "DevicePosition",
+											"3DxObjectType": "EnsLogicalEquipment",
+											"code": "FH-SNF-E02",
+											"attributes": {
+												"partNumber": null,
+												"wbsActivity": null,
+												"customerDevicePosition": null,
+												"descriptionInEnglish": "Sand feeding opening",
+												"descriptionInCustomerLang": null,
+												"contractDeliverableId": null
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Medical Device Product">
+            <!--<runTimeInterfaceList>DELAsmUnitRefRequired, DELAsmLotRefRequired, MBOM_MBOMPDM, TRS_TermID, TRS_ShortEnglish, MBOM_MBOMERP, MBOM_MBOMReference</runTimeInterfaceList>-->
+            <attributes>
+                <attribute>
+                    <source_name>Marketing Name</source_name>
+                    <destination_name>Marketing Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required>true</is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Web Availability</source_name>
+                    <destination_name>Web Availability</destination_name>
+                    <values>
+                        <value src="Released Products">Released Products</value>
+                        <value src="Released and Effective Products">Released and Effective Products</value>
+                        <value src="Not Available">Not Available</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 project property</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>project</source_name>
+                    <destination_name>project</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required>true</is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>current</source_name>
+                    <destination_name>current</destination_name>
+                    <values>
+                        <value src="Release">Release</value>
+                        <value src="Obsolete">Obsolete</value>
+                        <value src="Review">Review</value>
+                        <value src="Design Engineering">Design Engineering</value>
+                        <value src="Product Management">Product Management</value>
+                        <value src="Preliminary">Preliminary</value>
+                        <!--<value src="Released and Effective Products">Released and Effective Products</value>
+                        <value src="Not Available">Not Available</value>-->
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required>true</is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>description</source_name>
+                    <destination_name>description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>owner</source_name>
+                    <destination_name>owner</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required>true</is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Child Node Available Index</source_name>
+                    <destination_name>Child Node Available Index</destination_name>
+                    <values defaultValue="0"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Derivation Level</source_name>
+                    <destination_name>Derivation Level</destination_name>
+                    <values defaultValue="Level0"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Node Index</source_name>
+                    <destination_name>Node Index</destination_name>
+                    <values defaultValue="0-2000000000"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Organization</source_name>
+                    <destination_name>organization</destination_name>
+                    <values defaultValue="VALMET_INTERNAL"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute> 
+                <attribute>
+                    <source_name>Marketing Text</source_name>
+                    <destination_name>Marketing Text</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute> 
+                <attribute>
+                    <source_name>MOD Stacks</source_name>
+                    <destination_name>MOD Stacks</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Equipment List Report XML</source_name>
+                    <destination_name>Equipment List Report XML</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Synopsis</source_name>
+                    <destination_name>Synopsis</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute> 
+            
+                <attribute>
+                    <source_name>International Birth Date</source_name>
+                    <destination_name>International Birth Date</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>  
+                <attribute>
+                    <source_name>Orphan Drug</source_name>
+                    <destination_name>Orphan Drug</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Strength</source_name>
+                    <destination_name>Strength</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Notes</source_name>
+                    <destination_name>Notes</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Base Price</source_name>
+                    <destination_name>Base Price</destination_name>
+                    <values defaultValue="0.0"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Responsible Design Engineer</source_name>
+                    <destination_name>Responsible Design Engineer</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Start Effectivity</source_name>
+                    <destination_name>Start Effectivity</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>End Effectivity</source_name>
+                    <destination_name>Start Effectivity</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Current Version</source_name>
+                    <destination_name>Current Version</destination_name>
+                    <values defaultValue="0"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Is Version</source_name>
+                    <destination_name>Is Version</destination_name>
+                    <values defaultValue="FALSE"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--  Additional Attributes-->
+                <attribute>
+                    <source_name>Specification</source_name>
+                    <destination_name>SERV_Specification</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Technology category</source_name>
+                    <destination_name>SERV_Technology_category</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Product type</source_name>
+                    <destination_name>SERV_Product_type</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Product Manager</source_name>
+                    <destination_name>SERV_Product_Manager</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Product base business model</source_name>
+                    <destination_name>SERV_Product_base_business_model</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Delivery type</source_name>
+                    <destination_name>SERV_Delivery_type</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Legacy SSG</source_name>
+                    <destination_name>SERV_Legacy_SSG</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>New SSG</source_name>
+                    <destination_name>SERV_New_SSG</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Reportable product</source_name>
+                    <destination_name>SERV_Reportable_product</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Legacy MOD</source_name>
+                    <destination_name>SERV_Legacy_MOD</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Legacy ID</source_name>
+                    <destination_name>SERV_Legacy_ID</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Legacy name</source_name>
+                    <destination_name>SERV_Legacy_name</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Item group</source_name>
+                    <destination_name>SERV_Item_group</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Reference activity</source_name>
+                    <destination_name>SERV_Reference_activity</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>eCommerce product</source_name>
+                    <destination_name>SERV_eCommerce_product</destination_name>
+                    <values>
+                        <value src="Y">Y</value>
+                        <value src="N">N</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Purchase statistic group</source_name>
+                    <destination_name>SERV_Purchase_statistic_group</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Main process</source_name>
+                    <destination_name>SERV_Main_process</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Standard Delivery Time</source_name>
+                    <destination_name>SERV_Standard_Delivery_Time</destination_name>
+                    <values></values>
+                    <data-type>Float</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>IPR owner</source_name>
+                    <destination_name>SERV_IPR_owner</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Product Heat level</source_name>
+                    <destination_name>SERV_Product_Heat_level</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Area Product Support persons</source_name>
+                    <destination_name>SERV_Area_Product_Support_persons</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Valmet regions</source_name>
+                    <destination_name>SERV_Valmet_regions</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Patent ID</source_name>
+                    <destination_name>SERV_Patent_ID</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Patent numbers</source_name>
+                    <destination_name>SERV_Patent_numbers</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Part category</source_name>
+                    <destination_name>SERV_Part_category</destination_name>
+                    <values>
+                        <value src="ODI">ODI</value>
+                        <value src="Commercial">Commercial</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Country of origin</source_name>
+                    <destination_name>SERV_Country_of_origin</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Valmet manufacturing site</source_name>
+                    <destination_name>SERV_Valmet_manufacturing_site</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Scope of service</source_name>
+                    <destination_name>SERV_Scope_of_service</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Customer benefits service</source_name>
+                    <destination_name>SERV_Customer_benefits_service</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Service interval</source_name>
+                    <destination_name>SERV_Service_interval</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Service Delivery Capability</source_name>
+                    <destination_name>SERV_Service_Delivery_Capability</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Product Responsible Unit</source_name>
+                    <destination_name>SERV_Product_Responsible_Unit</destination_name>
+                    <values></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Hardware Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!-- Classification Path: Product Details Refiner|Product Details Level A -->
+                <attribute>
+					<source_name>Product application areas</source_name>
+					<destination_name>SERV_Product_application_areas</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Groove depth OD</source_name>
+					<destination_name>SERV_Groove_depth_OD</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Cutting edge length</source_name>
+					<destination_name>SERV_Cutting_edge_length</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Groove dimension OD</source_name>
+					<destination_name>SERV_Groove_dimension_OD</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Bar angle ID</source_name>
+					<destination_name>SERV_Bar_angle_ID</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Pumping direction</source_name>
+					<destination_name>SERV_Pumping_direction</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Effective refining diameter in inche</source_name>
+					<destination_name>SERV_Effective_refining_diameter_in_inche</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Bar angle OD</source_name>
+					<destination_name>SERV_Bar_angle_OD</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Release angle draft angle for LoCo</source_name>
+					<destination_name>SERV_Release_angle_draft_angle_for_LoCo</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Bar height bar root width at ID and OD</source_name>
+					<destination_name>SERV_Bar_height_bar_root_width_at_ID_and_OD</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Impact length assuming same R and S</source_name>
+					<destination_name>SERV_Impact_length_assuming_same_R_and_S</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Bar dimension OD</source_name>
+					<destination_name>SERV_Bar_dimension_OD</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Sensor</source_name>
+					<destination_name>SERV_Sensor</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Trademark names</source_name>
+					<destination_name>SERV_Trademark_names</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Rotation by design</source_name>
+					<destination_name>SERV_Rotation_by_design</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Dams</source_name>
+					<destination_name>SERV_Dams</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Groove dimension ID</source_name>
+					<destination_name>SERV_Groove_dimension_ID</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Bolts</source_name>
+					<destination_name>SERV_Bolts</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Valmet manufacturing site</source_name>
+					<destination_name>SERV_Valmet_manufacturing_site</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Bar dimension ID</source_name>
+					<destination_name>SERV_Bar_dimension_ID</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>Groove depth ID</source_name>
+					<destination_name>SERV_Groove_depth_ID</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+				<attribute>
+					<source_name>ProSafe</source_name>
+					<destination_name>SERV_ProSafe</destination_name>
+					<values></values>
+					<data-type>String</data-type>
+					<data-format></data-format>
+					<description>Hardware Product Import</description>
+					<data_length></data_length>
+					<is_required></is_required>
+					<selectable></selectable>
+					<insertable></insertable>
+				</attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

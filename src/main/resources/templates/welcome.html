@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Enovia Rest Service</title>
+        <link href="https://fonts.googleapis.com/css?family=Josefin Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo Black" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    </head>
+    <body data-gr-c-s-loaded="true" style=" display: flex; justify-content: space-around;">
+        <div id="leftSideBar" style="
+             width: 20%;
+             height: 100vh;
+             background-image: url(https://www.valmet.com/contentassets/015be983845447b995468a7f697a7988/valmet-forward.svg);
+             /*background-image: url(../img/valmet-forward.svg);*/
+             background-repeat: no-repeat, repeat;
+             background-position: center center;">
+        </div>
+
+        <div id="rightSideBar" style="
+             height: 100vh;
+             width: 80%;
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             align-items: center;">
+            <div id="innerRightBar" style="text-align: right;font-family: 'Josefin Slab';color: lavender;">
+                <h2 style="
+                    text-align: center;
+                    font-family: 'Arial Black', Gadget, sans-serif;
+                    font-style: normal;
+                    color: darkslategrey;">
+                    Welcome to Enovia Rest Service
+                </h2>
+                <h1 style="
+                    margin: auto;
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 50px;
+                    font-family: 'Archivo Black';
+                    color: rebeccapurple;">
+                    <span th:text="${environmentName}"></span> Environment
+                </h1>
+                <h3>Delivers the best</h3>
+                <h5 style="font-family: 'Roboto Slab', serif;color: gray;">Build Version : <span th:text="${builtVersion}"></span></h5>
+            </div>
+        </div>
+    </body>
+</html>

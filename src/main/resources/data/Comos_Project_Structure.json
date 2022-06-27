@@ -1,0 +1,162 @@
+{
+  "status": "Success",
+  "message": null,
+  "data": {
+    "millId": "119160",
+    "millHierarchyId": null,
+    "equipmentId": "119160.135",
+    "plantId": "A48WDOO1P6",
+    "projectId": "A2M5P9T8HB",
+    "layerId": "",
+    "projectStructure": {
+      "id": "A4BM9HUWDO",
+      "type": "Sub Project",
+      "code": "H0010ARA1Test",
+      "description": "MF Kemi BTT RB Recovery Boiler",
+      "hasChild": true,
+      "childs": [
+        {
+          "id": "A4EXWNOASM",
+          "type": "Activity",
+          "code": "01",
+          "description": "Top Activity",
+          "activityLevel": "1",
+          "hasChild": true,
+          "childs": [
+            {
+              "id": "A4F2L35YBY",
+              "type": "Activity",
+              "code": "25",
+              "description": "Common products",
+              "activityLevel": "2",
+              "hasChild": true,
+              "childs": [
+                {
+                  "id": "A4F2L2ADBY",
+                  "type": "Activity",
+                  "code": "2510",
+                  "description": "Tanks",
+                  "activityLevel": "3",
+                  "hasChild": true,
+                  "childs": [
+                    {
+                      "id": "A4F2L2N8BY",
+                      "type": "Activity",
+                      "code": "251005",
+                      "description": "Tanks",
+                      "activityLevel": "4",
+                      "hasChild": true,
+                      "childs": [
+                        {
+                          "id": "A4OVHCBQAI",
+                          "type": "Deliverable",
+                          "code": "251005-15.00",
+                          "name": "251005-15.00 Tanks",
+                          "description": "Tanks",
+                          "properties": {
+                            "wbSMilestone": "",
+                            "topLevelItem": null,
+                            "fpQuantity": 1,
+                            "vcSId": null,
+                            "overlay": 0,
+                            "businessPartner": null,
+                            "roleResponsible": null,
+                            "mFilesClass": "MF.CL.ContractDeliverable",
+                            "fpResponsible": "MZ3",
+                            "fpProjectContact": null,
+                            "lastModifiedInTable": "2022-03-09T12:22:06.01",
+                            "fpLayerId": 0,
+                            "fpContract": null,
+                            "fpContractLine": null,
+                            "fpDeliverableLine": null,
+                            "plannedDeliveryDate": null,
+                            "fpExtraleadTime": null,
+                            "deliverableType": "ST001"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "A4F2KZR8BY",
+                  "type": "Activity",
+                  "code": "2515",
+                  "description": "Machines & subc equipment",
+                  "activityLevel": "3",
+                  "hasChild": true,
+                  "childs": [
+                    {
+                      "id": "A4F2KZ94BY",
+                      "type": "Activity",
+                      "code": "251508",
+                      "description": "Cranes & Hoists",
+                      "activityLevel": "4",
+                      "hasChild": true,
+                      "childs": [
+                        {
+                          "id": "A4F2KZV0BY",
+                          "type": "Deliverable",
+                          "code": "251508-02.00",
+                          "name": "251508-02.00 Hydraulic platform",
+                          "description": "Hydraulic platform",
+                          "properties": {
+                            "wbSMilestone": "",
+                            "topLevelItem": null,
+                            "fpQuantity": 1,
+                            "vcSId": "500975",
+                            "overlay": 0,
+                            "businessPartner": null,
+                            "roleResponsible": null,
+                            "mFilesClass": "MF.CL.ContractDeliverable",
+                            "fpResponsible": "MZ3",
+                            "fpProjectContact": null,
+                            "lastModifiedInTable": "2022-03-08T06:15:32.05",
+                            "fpLayerId": 0,
+                            "fpContract": null,
+                            "fpContractLine": null,
+                            "fpDeliverableLine": null,
+                            "plannedDeliveryDate": null,
+                            "fpExtraleadTime": null,
+                            "deliverableType": "ST001"
+                          }
+                        },
+                        {
+                          "id": "A4F2L332BY",
+                          "type": "Deliverable",
+                          "code": "251508-03.00",
+                          "name": "251508-03.00 Manual hoisting devices",
+                          "description": "Manual hoisting devices",
+                          "properties": {
+                            "wbSMilestone": "",
+                            "topLevelItem": null,
+                            "fpQuantity": 1,
+                            "vcSId": "500974",
+                            "overlay": 0,
+                            "businessPartner": null,
+                            "roleResponsible": null,
+                            "mFilesClass": "MF.CL.ContractDeliverable",
+                            "fpResponsible": "MZ3",
+                            "fpProjectContact": null,
+                            "lastModifiedInTable": "2022-03-08T06:15:32.05",
+                            "fpLayerId": 0,
+                            "fpContract": null,
+                            "fpContractLine": null,
+                            "fpDeliverableLine": null,
+                            "plannedDeliveryDate": null,
+                            "fpExtraleadTime": null,
+                            "deliverableType": "ST001"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+    "type": "VALComponent",
+    "interfaces": [{
+            "interface": "MBOM_MBOMM_"
+        }
+    ],
+    "object_properties": [{
+            "property": "physicalid"
+        },
+        {
+            "property": "type"
+        },
+        {
+            "property": "revision"
+        },
+        {
+            "property": "name"
+        },
+        {
+            "property": "owner"
+        },
+        {
+            "property": "organization"
+        },
+        {
+            "property": "project"
+        },
+        {
+            "property": "level"
+        },
+        {
+            "property": "current"
+        }],
+    "attributes": [{
+            "attribute": "All",
+            "types": ["ODI Translation",
+                "text"]
+        },
+        {
+            "attribute": "Title",
+            "dbName": "PLMEntity.V_Name",
+            "bundle_id_attr": "MBOM_MBOMM_.MBOM_Title_Term_ID",
+            "abbr_attr": "MBOM_MBOMM_.MBOM_Short_Name_In_English",
+            "types": ["ODI translation"]
+        },
+        {
+            "attribute": "Item Common Text",
+            "dbName": "",
+            "bundle_id_attr": "",
+            "abbr_attr": "",
+            "types": ["text"]
+        },
+        {
+            "attribute": "Item Manufacturing Text",
+            "dbName": "",
+            "bundle_id_attr": "",
+            "abbr_attr": "",
+            "types": ["text"]
+        },
+        {
+            "attribute": "Item Purchasing Text",
+            "dbName": "",
+            "bundle_id_attr": "",
+            "abbr_attr": "",
+            "types": ["text"]
+        },
+        {
+            "attribute": "BOM Common Text",
+            "dbName": "",
+            "bundle_id_attr": "",
+            "abbr_attr": "",
+            "types": ["text"]
+        },
+        {
+            "attribute": "BOM Manufacturing Text",
+            "dbName": "",
+            "bundle_id_attr": "",
+            "abbr_attr": "",
+            "types": ["text"]
+        },
+        {
+            "attribute": "BOM Purchasing Text",
+            "dbName": "",
+            "bundle_id_attr": "",
+            "abbr_attr": "",
+            "types": ["text"]
+        }],
+    "expandTypes": [{
+			"type": "VAL_VALComponent"
+		}],
+	"expandRelations": []
+}

@@ -1,0 +1,434 @@
+{
+    "configurations": {
+        "gts_url": "https://jkls0326vm21a.vstage.co/gts_dev/api/",
+        "gts_user": "sudeepta.biswas",
+        "gts_password": "jklbiswasu",
+        "defaultTranslators": [{
+                "space": "Default",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "space": "Common Space",
+                "translator": "Enovia_test Translators"
+            }, {
+                "space": "TESTING",
+                "translator": "Enovia_test Translators"
+            }, {
+                "space": "TRAINING",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "space": "GLOBAL_COMPONENTS_INTERNAL",
+                "translator": "Enovia_test Translators"
+            }],
+        "componentConf": [{
+		"project": "Default",
+		"name": "Approach Flow System",
+                "children": [{"child": "Calender"},{"child": "Carts"}],
+		"definition": "Metso Paper, Approach Flow System translations"
+	},
+	{
+		"project": "Common Space",
+		"name": "Calender",
+                "children": [{"child": "CIM"},{"child": "Carts"}],
+		"definition": "Metso Paper, Calender translations"
+	},
+	{
+		"project": "TESTING",
+		"name": "Carts",
+                "children": [{"child": "Calender"},{"child": "Carts"}],
+		"definition": "Metso Paper, Carts translations"
+	},
+	{
+		"project": "TRAINING",
+		"name": "CIM",
+                "children": [{"child": "Calender"},{"child": "Carts"}],
+		"definition": "Metso Paper, Commercial item translations."
+	},
+	{
+		"project": "GLOBAL_COMPONENTS_INTERNAL",
+		"name": "Coater",
+                "children": [{"child": "Calender"},{"child": "Carts"}],
+		"definition": "Metso Paper, Coater translations"
+	},
+	{
+		"project": "All",
+		"name": "COMMON",
+                "children": [{"child": "Calender"},{"child": "Carts"}],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "HEBO",
+		"name": "Headbox",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "WETEND",
+		"name": "Wet End",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "DRYER",
+		"name": "Dryer Section",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "WINDER",
+		"name": "Winder",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "CALENDER",
+		"name": "Calender",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "SIZER",
+		"name": "Sizer",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "COATER",
+		"name": "Coater",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "ROLL",
+		"name": "Rolls",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "THERMASTER",
+		"name": "?",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "SYMROLL",
+		"name": "Sym Rolls",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "COMPONENTS",
+		"name": "Components",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "REEL",
+		"name": "Reel",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "SUCTION_ROLL",
+		"name": "Suction Rolls",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "AIRSYSTEM",
+		"name": "Air Systems",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "PLANT",
+		"name": "Plant",
+                "children": [],
+		"definition": "Metso Paper, Common translations"
+	},
+	{
+		"project": "WALKWAYS",
+		"name": "Walkways",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "NC",
+		"name": "?",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "RUNNABILITY",
+		"name": "Runnability",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "AIRDRYERS",
+		"name": "Air Dryers",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "HOOD_HREC",
+		"name": "Hood",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "VENTILATION",
+		"name": "Ventilation",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "GLOBAL_COMPONENTS",
+		"name": "Components",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "SERVICE",
+		"name": "Service",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "PLANT",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "ROLL",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "YANKEE_CYL",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "HEADBOX",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "AIRSYSTEMS",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "WETEND",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "DRYEND",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "RETURNE",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "PDU_DRYER",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "PREMEKON_WALKWAYS",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "INDUSTRIAL_DESIGN",
+		"name": "",
+                "children": [],
+		"definition": ""
+	},
+	{
+		"project": "FOUNDRY",
+		"name": "",
+                "children": [],
+		"definition": ""
+	}],
+        "languages": [{
+                "language": "All",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "language": "English",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "language": "Chinese",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "language": "Finnish",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "language": "Czech",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "language": "German",
+                "translator": "Enovia_test Translators"
+            },
+            {
+                "language": "French",
+                "translator": "Enovia_test Translators"
+            }],
+        "levels": [{
+                "level": "0"
+            },
+            {
+                "level": "1"
+            },
+            {
+                "level": "2"
+            },
+            {
+                "level": "3"
+            },
+            {
+                "level": "All"
+            }],
+        "due_dates": [{
+                "due_date": "24 hours"
+            },
+            {
+                "due_date": "48 hours"
+            },
+            {
+                "due_date": "1 week"
+            },
+            {
+                "due_date": "2 weeks"
+            },
+            {
+                "due_date": "3 weeks"
+            }],
+        "components": [{
+                "name": "Common"
+            }],
+        "object_properties": [],
+        "attributes": [],
+        "expandTypes": [],
+        "profiles": [{
+                "type": "BOM",
+                "expandTypes": [{
+                        "type": "Provide"
+                    },
+                    {
+                        "type": "CreateAssembly"
+                    },
+                    {
+                        "type": "ProcessContinuousProvide"
+                    },
+                    {
+                        "type": "ProcessContinuousCreateMaterial"
+                    }]
+            },
+			{
+                "type": "VALComponent",
+                "expandTypes": [{
+					"type": "VAL_VALComponent"
+				}]
+            },
+			{
+                "type": "VALComponentMaterial",
+                "expandTypes": [{
+					"type": "VAL_VALComponentMaterial"
+				}]
+            },
+            {
+                "type": "ProductLine",
+                "expandTypes": [{
+                        "type": "Product Line"
+                    },
+                    {
+                        "type": "Model"
+                    },
+                    {
+                        "type": "Hardware Product"
+                    },
+                    {
+                        "type": "Logical Feature"
+                    },
+                    {
+                        "type": "Configuration Feature"
+                    },
+                    {
+                        "type": "Configuration Rules"
+                    },
+                    {
+                        "type": "Image"
+                    },
+                    {
+                        "type": "Reference Document"
+                    },
+                    {
+                        "type": "Routes"
+                    }]
+            },
+            {
+                "type": "ProductStructure",
+                "expandTypes": [{
+                        "type": "VPMReference"
+                    },
+                    {
+                        "type": "VPMRepReference"
+                    }]
+            }],
+        "defaultConf": {
+            "languages": [{
+                    "language": "English",
+                    "translators": [{
+                            "translator": "Enovia_test Translators"
+                        }]
+                },
+                {
+                    "language": "Finnish",
+                    "translators": [{
+                            "translator": "Enovia_test Translators"
+                        }]
+                }],
+            "workNo": "Enovia",
+            "due_date": "1 week",
+            "level": "0",
+            "attributes": [{
+                    "attribute": "Title",
+                    "dbName": "PLMEntity.V_Name",
+                    "bundle_id_attr": "Title_BundleID",
+                    "abbr_attr": "Title_Abbreviation",
+                    "types": ["ODI Translation"]
+                }],
+            "components": [{
+                    "name": "COMMON"
+                }]
+        }
+    }
+}

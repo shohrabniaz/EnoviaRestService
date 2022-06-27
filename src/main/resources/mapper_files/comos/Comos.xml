@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<comos>
+    <item-list type="Plant">
+        <item type="Plant" constantClass="">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>Plant</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>Plant</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>Plant</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>Plant</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+    <item-list type="Unit">
+        <item type="Unit">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>Unit</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>Unit</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>Unit</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>Unit</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+    <item-list type="SubUnit">
+        <item type="SubUnit">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>SubUnit</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>SubUnit</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>SubUnit</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>SubUnit</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+    <item-list type="EquipmentCategory">
+        <item type="Package" packageName="Equipments">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalSystemInstance</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemInstance</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="EnsLogicalEquipment">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipment</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipment</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipmentInst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipmentInst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="RFLVPMLogicalReference">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+    <item-list type="PipeCategory">
+        <item type="Package" packageName="Pipes">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalSystemInstance</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemInstance</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <!--        <item type="PipeCategoryConstants">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>Piping_Line</source>
+                        <destination>Piping_Line</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>Piping_Line</source>
+                        <destination>Piping_Line</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>Piping_Line_Inst</source>
+                        <destination>Piping_Line_Inst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>Piping_Line_Inst</source>
+                        <destination>Piping_Line_Inst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>-->
+        <item type="RFLVPMLogicalSystemReference">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="HVAC_Line">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>HVAC_Line</source>
+                        <destination>HVAC_Line</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>HVAC_Line</source>
+                        <destination>HVAC_Line</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>HVAC_Line</source>
+                        <destination>HVAC_Line_Inst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>HVAC_Line</source>
+                        <destination>HVAC_Line_Inst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="HVACLogicalBranch">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>HVAC_Logical_Branch</source>
+                        <destination>HVAC_Logical_Branch</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>HVAC_Logical_Branch</source>
+                        <destination>HVAC_Logical_Part</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>HVAC_Logical_Branch</source>
+                        <destination>HVAC_Logical_Branch_Inst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>HVAC_Logical_Branch</source>
+                        <destination>HVAC_Logical_Branch_Inst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="HVACLogicalMiscellaneous">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>HVAC_Logical_Miscellaneous</source>
+                        <destination>HVAC_Logical_Miscellaneous</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>HVAC_Logical_Miscellaneous</source>
+                        <destination>HVAC_Logical_Part</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>HVAC_Logical_Miscellaneous</source>
+                        <destination>HVAC_Logical_Miscellaneous_Inst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>HVAC_Logical_Miscellaneous</source>
+                        <destination>HVAC_Logical_Miscellaneous_Inst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="RFLVPMLogicalReference">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+    <item-list type="ValveCategory">
+        <item type="Package" packageName="Valves">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalSystemInstance</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemInstance</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="Piping_Logical_Valve">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Valve</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Part</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Valve_Inst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Valve_Inst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="RFLVPMLogicalReference">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalReference</source>
+                        <destination>RFLVPMLogicalInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+        <item-list type="LogicalAssembly">
+        <item type="LogicalAssembly">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>LogicalAssembly</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>LogicalAssembly</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>LogicalAssembly</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>LogicalAssembly</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="RFLVPMLogicalSystemReference">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemReference</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>RFLVPMLogicalSystemReference</source>
+                        <destination>RFLVPMLogicalSystemInstance</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="Piping_Logical_Valve">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Valve</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Part</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Valve_Inst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>Piping_Logical_Valve</source>
+                        <destination>Piping_Logical_Valve_Inst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+        <item type="EnsLogicalEquipment">
+            <attribute-list>
+                <item-attribute-list>
+                    <item-attribute type="type">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipment</destination>
+                    </item-attribute>
+                    <item-attribute type="discipline">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipment</destination>
+                    </item-attribute>
+                </item-attribute-list>
+                <relational-attribute-list>
+                    <relational-attribute type="type">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipmentInst</destination>
+                    </relational-attribute>
+                    <relational-attribute type="discipline">
+                        <source>EnsLogicalEquipment</source>
+                        <destination>EnsLogicalEquipmentInst</destination>
+                    </relational-attribute>
+                </relational-attribute-list>
+            </attribute-list>
+        </item>
+    </item-list>
+</comos>

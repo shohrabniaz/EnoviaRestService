@@ -1,0 +1,111 @@
+{
+	"type": "ProductStructure",
+	"object_properties": [{
+		"property": "physicalid"
+	},
+	{
+		"property": "type"
+	},
+	{
+		"property": "revision"
+	},
+	{
+		"property": "name"
+	},
+	{
+		"property": "organization"
+	},
+	{
+		"property": "project"
+	},
+	{
+		"property": "level"
+	},
+	{
+		"property": "current"
+	}],
+	"attributes": [{
+		"attribute": "All",
+		"types": ["ODI Translation",
+		"text"]
+	},
+	{
+		"attribute": "Title",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": [""]
+	},
+	{
+		"attribute": "Item Common Text",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": ["text"]
+	},
+	{
+		"attribute": "Item Manufacturing Text",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": ["text"]
+	},
+	{
+		"attribute": "Item Purchasing Text",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": ["text"]
+	},
+	{
+		"attribute": "BOM Common Text",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": ["text"]
+	},
+	{
+		"attribute": "BOM Manufacturing Text",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": ["text"]
+	},
+	{
+		"attribute": "BOM Purchasing Text",
+		"dbName": "",
+		"bundle_id_attr": "",
+		"abbr_attr": "",
+		"types": ["text"]
+	}],
+	"expandTypes": [{
+			"type": "Product Line"
+		},
+		{
+			"type": "Model"
+		},
+		{
+			"type": "Hardware Product"
+		},
+		{
+			"type": "Logical Feature"
+		},
+		{
+			"type": "Configuration Feature"
+		},
+		{
+			"type": "Configuration Rules"
+		},
+		{
+			"type": "Image"
+		},
+		{
+			"type": "Reference Document"
+		},
+		{
+			"type": "Routes"
+		}],
+	"expandRelations": [{
+		"relation": "*"
+	}]
+}

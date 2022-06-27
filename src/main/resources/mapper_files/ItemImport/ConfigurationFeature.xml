@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Configuration Feature">
+            <!--<runTimeInterfaceList>DELAsmUnitRefRequired, DELAsmLotRefRequired, MBOM_MBOMPDM, TRS_TermID, TRS_ShortEnglish, MBOM_MBOMERP, MBOM_MBOMReference</runTimeInterfaceList>-->
+            <attributes>
+                <attribute>
+                    <source_name>Configuration Selection Type</source_name>
+                    <destination_name>Configuration Selection Type</destination_name>
+                    <values defaultValue="Single">
+                        <value src="Single">Single</value>
+                        <value src="Multiple">Multiple</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Display Name</source_name>
+                    <destination_name>Display Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 project property</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                 <attribute>
+                    <source_name>project</source_name>
+                    <destination_name>project</destination_name>
+                    <values defaultValue="TESTING"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>organization</source_name>
+                    <destination_name>organization</destination_name>
+                    <values defaultValue="PM_VAL_INTERNAL"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

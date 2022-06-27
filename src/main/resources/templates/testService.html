@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Enovia Rest Service</title>
+        <link href="https://fonts.googleapis.com/css?family=Josefin Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo Black" rel="stylesheet">
+    </head>
+    <body data-gr-c-s-loaded="true" style=" display: flex; justify-content: space-around;">
+        <div id="leftSideBar" style="
+             width: 20%;
+             height: 100vh;
+             background-image: url(https://www.valmet.com/contentassets/015be983845447b995468a7f697a7988/valmet-forward.svg);
+             /*background-image: url(../img/error-icon-28.png);*/
+             background-repeat: no-repeat, repeat;
+             background-position: center center;">
+        </div>
+
+        <div id="rightSideBar" style="
+             height: 100vh;
+             width: 80%;
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             align-items: center;">
+            <div id="innerRightBar" style="text-align: right;font-family: 'Josefin Slab';color: lavender;">
+                <h2 style="
+                    text-align: center;
+                    font-family: 'Arial Black', Gadget, sans-serif;
+                    font-style: normal;
+                    color: darkslategrey;">
+                    Service is going to be tested
+                </h2>
+                <h1 style="
+                    margin: auto;
+                    text-align: left;
+                    font-weight: bolder;
+                    font-size: 30px;
+                    font-family: 'Archivo Black';
+                    color: green;">
+                    Test Data : <span th:text="${test_variable}"></span> <br/>
+                </h1>
+<!--                <h2 style="
+                    text-align: left;
+                    color: darkorange;
+                    font-family: Lato;
+                    font-weight: bolder;">
+                    URL    : <span th:text="${path}"></span> <br>
+                    Status : <span th:text="${status}"></span> <br>
+                    Message: <span th:text="${message}"></span> <br>
+                </h2>
+                <h3>Sorry for inconvenience</h3>-->
+            </div>
+        </div>
+    </body>
+</html>

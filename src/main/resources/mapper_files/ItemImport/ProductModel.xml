@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Model">
+            <!--<runTimeInterfaceList>DELAsmUnitRefRequired, DELAsmLotRefRequired, MBOM_MBOMPDM, TRS_TermID, TRS_ShortEnglish, MBOM_MBOMERP, MBOM_MBOMReference</runTimeInterfaceList>-->
+            <attributes>
+                <attribute>
+                    <source_name>Marketing Name</source_name>
+                    <destination_name>Marketing Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>project</source_name>
+                    <destination_name>project</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+<!--                <attribute>
+                    <source_name>current</source_name>
+                    <destination_name>current</destination_name>
+                    <values>
+                        <value src="Release">Release</value>
+                        <value src="Obsolete">Obsolete</value>
+                        <value src="Review">Review</value>
+                        <value src="Design Engineering">Design Engineering</value>
+                        <value src="Product Management">Product Management</value>
+                        <value src="Preliminary">Preliminary</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>description</source_name>
+                    <destination_name>description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>owner</source_name>
+                    <destination_name>owner</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Organization</source_name>
+                    <destination_name>organization</destination_name>
+                    <values defaultValue="VALMET_INTERNAL"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Product Import</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <!-- insertable is used to allow attribute value to update during api create call -->
+                    <insertable>true</insertable>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

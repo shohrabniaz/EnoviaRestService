@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element>
+	<relationshipPattern>*</relationshipPattern>
+	<typePattern>CreateAssembly,Provide,ProcessContinuousProvide,ProcessContinuousCreateMaterial</typePattern>
+	<getTo>false</getTo>
+	<getFrom>true</getFrom>
+	<recursionLevel>0</recursionLevel>
+	<limit>0</limit>
+	<tableName>EWC_PRODUCT_STRUCTURE</tableName>
+	<objectIdFlag>true</objectIdFlag>
+	<depthFlag>true</depthFlag>
+        <attributeConf>BOM_EXPORT_ATTRIBUTES.conf</attributeConf>
+        <additionalServices></additionalServices>
+</element>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pre_defined_values>
+    <value_mapping>
+        <OwnerGroup_CollaborationSpace>
+            <Master src="PDM" discriminator="OwnerGroup">
+                <EnoviaV6 discriminator="CollaborationSpace" defaultCollaborationSpace="" defaultOrganization="">
+                    <value src="GLI Dryer">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="PM Wet End Global">PM_WETEND_INTERNAL</value>
+                    <value src="GOR Air systems">Air system</value>
+                    <value src="NA Air Systems">Air system</value>
+                    <value src="PM Dryer section">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="PM Dryer section Application">PM_DRYER_RD_CONFIDENTIAL</value>
+                    <value src="PM Dryer section Global">PM_DRYER_INTERNAL</value>
+                    <value src="PM Dryer section PMGT">PM_DRYER_RD_CONFIDENTIAL</value>
+                    <value src="PM Dryer section Sub">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="Shanghai Dryer End Sub">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="TOK Dryer section">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="WHL Belt Dryers">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="PM Former">PM_WETEND_CONFIDENTIAL</value>
+                    <value src="PDU Headbox">PM_HEBO_CONFIDENTIAL</value>
+                    <value src="PM Headbox">PM_HEBO_CONFIDENTIAL</value>
+                    <value src="PM Headbox Application">PM_HEBO_RD_CONFIDENTIAL</value>
+                    <value src="PM Headbox PMGT">PM_HEBO_RD_CONFIDENTIAL</value>
+                    <value src="PM Headbox Global">PM_HEBO_INTERNAL</value>
+                    <value src="PM Headbox Sub">PM_HEBO_CONFIDENTIAL</value>
+                    <value src="TOK Headbox">PM_HEBO_CONFIDENTIAL</value>
+                    <value src="Global Items">GLOBAL_COMPONENTS_INTERNAL</value>
+                    <value src="Jyvaskyla">PM_HEBO_CONFIDENTIAL</value>
+                    <value src="PDU Wet End">PM_WETEND_INTERNAL</value>
+                    <value src="PM PSO China Dryer">PM_DRYER_CONFIDENTIAL</value>
+                    <value src="Shanghai Wet End">PM_WETEND_INTERNAL</value>
+                    <value src="Shanghai Wet End Sub">PM_WETEND_INTERNAL</value>
+                    <value src="Xian Wet End">PM_WETEND_INTERNAL</value>
+                    <value src="Hagfors">SPR_REFINER_SEG_CONFIDENTIAL</value>
+                    <value src="PM Former Sub">PM_WETEND_CONFIDENTIAL</value>
+                    <value src="PM Rolls">PM_ROLL_CONFIDENTIAL</value>
+                    <value src="PM Rolls PMGT">PM_ROLL_RD_CONFIDENTIAL</value>
+                    <value src="PM Rolls Application">PM_ROLL_RD_CONFIDENTIAL</value>
+                    <value src="PM Rolls Global">PM_ROLL_INTERNAL</value>
+                    <value src="PM Automation">PM_AUTOMATION_INTERNAL</value>
+                    <value src="PM Automation Global">PM_AUTOMATION_INTERNAL</value>
+                    <value src="PM Automation Sub">PM_AUTOMATION_INTERNAL</value>
+                    <value src="PM Doctors">PM_COMPONENTS_INTERNAL</value>
+                    <value src="PM Doctors Application">PM_COMPONENTS_RD_CONFIDENTIAL</value>
+                    <value src="PM Doctors Global">PM_COMPONENTS_INTERNAL</value>
+                    <value src="PM Doctors PMGT">PM_COMPONENTS_RD_CONFIDENTIAL</value>
+                    <value src="PM Doctors Sub">PM_COMPONENTS_INTERNAL</value>
+                    <value src="PM Former Application">PM_WETEND_RD_CONFIDENTIAL</value>
+                    <value src="PM Former PMGT">PM_WETEND_RD_CONFIDENTIAL</value>
+                    <value src="PM Press section">PM_WETEND_CONFIDENTIAL</value>
+                    <value src="PM Press section Application">PM_WETEND_RD_CONFIDENTIAL</value>
+                    <value src="PM Press section PMGT">PM_WETEND_RD_CONFIDENTIAL</value>
+                    <value src="PM Press section Sub">PM_WETEND_CONFIDENTIAL</value>
+                    <value src="PM Suction Rolls">PM_SUCTION_ROLL_CONFIDENTIAL</value>
+                    <value src="PM Suction Rolls Application">PM_SUCTION_ROLL_RD_CONFIDENTIAL</value>
+                    <value src="PM Suction Rolls Global">PM_SUCTION_ROLL_INTERNAL</value>
+                    <value src="PM Suction Rolls PMGT">PM_SUCTION_ROLL_RD_CONFIDENTIAL</value>
+                    <value src="PM Sym-rolls">PM_SYMROLL_CONFIDENTIAL</value>
+                    <value src="PM Sym-rolls Application">PM_SYMROLL_RD_CONFIDENTIAL</value>
+                    <value src="PM Sym-rolls PMGT">PM_SYMROLL_RD_CONFIDENTIAL</value>
+                    <value src="MPIT">TESTING_CONFIDENTIAL</value>
+                    <value src="Refiner Segment">SPR_REFINER_SEG_CONFIDENTIAL</value>
+                </EnoviaV6>
+            </Master>
+        </OwnerGroup_CollaborationSpace>
+        <type_mappings>
+            <Master src="PDM" discriminator="ObjectType">
+                <EnoviaV6 discriminator="ObjectType">
+                    <value src="Own design item">CreateAssembly|ProcessContinuousCreateMaterial</value> <!-- Impacted areas: Delete Service & ODI item and BOM import from PDM -->
+                    <value src="commercial items">VAL*</value>
+                </EnoviaV6>
+            </Master>
+            <Master src="MOPAZ" discriminator="ObjectType">
+                <EnoviaV6 discriminator="ObjectType">
+                    <value src="CreateAssembly">CreateAssembly</value>
+                    <value src="CreateMaterial">CreateMaterial</value>
+                    <value src="ProcessContinuousCreateMaterial">ProcessContinuousCreateMaterial</value>
+                    <value src="Provide">Provide</value>
+                </EnoviaV6>
+            </Master>
+        </type_mappings>
+    </value_mapping>
+</pre_defined_values>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Plant">
+            <!--<runTimeInterfaceList>DELAsmUnitRefRequired, DELAsmLotRefRequired, MBOM_MBOMPDM, TRS_TermID, TRS_ShortEnglish, MBOM_MBOMERP, MBOM_MBOMReference, TD_TechnicalDesignation</runTimeInterfaceList>-->
+            <attributes>
+                <attribute>
+                    <source_name>Title in English</source_name>
+                    <destination_name>PLMEntity.V_Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Description</source_name>
+                    <destination_name>description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>current</destination_name>
+                    <values defaultValue="IN_WORK">
+                        <value src="Released">RELEASED</value>
+                        <value src="expiring">RELEASED</value>
+                        <value src="forbidden">OBSOLETE</value>
+                        <value src="Draft">IN_WORK</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 current attribute</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable data</selectable>
+                    <insertable>Insertable data</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Owner Group</source_name>
+                    <destination_name>project</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 current attribute</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable data</selectable>
+                    <insertable>Insertable data</insertable>
+                </attribute>
+                <attribute>
+                    <source_name>organization</source_name>
+                    <destination_name>organization</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 current attribute</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable data</selectable>
+                    <insertable>Insertable data</insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Short name in English</source_name>
+                    <destination_name>TRS_ShortEnglish.TRS_ShortNameEnglish</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length>30</data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Mastership</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_Mastership</destination_name>
+                    <values defaultValue="COMOS">
+                        <value src="COMOS">COMOS</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Creator</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_CreatorPDM</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>
