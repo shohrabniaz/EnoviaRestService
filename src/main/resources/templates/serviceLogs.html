@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Enovia Rest Log Service</title>
+    </head>
+    <body>
+        
+        <ul>
+            <li th:each="logFileItem : ${logFileItemList}">
+                <a th:href="@{|${logFileItem.filePath}|}" target="_blank">
+                    <span th:text="${logFileItem.fileName}"></span>
+                </a>
+            </li>
+        </ul>
+    </body>
+</html>

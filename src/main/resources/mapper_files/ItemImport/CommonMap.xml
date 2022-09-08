@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="CreateAssembly">
+            <attributes>			
+                <attribute>
+                    <source_name>name</source_name>
+                    <destination_name>name</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>owner</source_name>
+                    <destination_name>owner</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>current</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>title</source_name>
+                    <destination_name>PLMEntity.V_Name</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>description</source_name>
+                    <destination_name>PLMEntity.V_description</destination_name>
+                </attribute>				
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

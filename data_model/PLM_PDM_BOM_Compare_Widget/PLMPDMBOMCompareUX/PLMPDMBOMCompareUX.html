@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:widget="http://www.netvibes.com/ns/">
+
+<head>
+    <title>PLM-PDM BOM Comparison Widget</title>
+    <link rel="icon" type="image/ico" href="./assets/img/valmet_icon.ico" />
+    <!-- Application Metas -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="brand" content="VALMET" />
+    <meta name="description" content="VALMET - PLM-PDM BOM Compare Widget" />
+    <meta name="autoRefresh" content="0" />
+
+    <!-- JS Source  -->
+    <link rel="stylesheet" type="text/css" href="../VENENO6WPlugins/plugins/jqueryui/latest/css/cupertino/jquery.ui.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="../E6WCommonUI/E6WCommonUI.css" />
+
+    <script src="../VENENO6WPlugins/plugins/jquery/latest/jquery.js"></script>
+    <script type="text/javascript" src="../VENENO6WPlugins/plugins/jqueryui/latest/js/jquery.ui.custom.js"></script>
+    <script src="../../webapps/AmdLoader/AmdLoader.js"></script>
+
+    <script src="./assets/js/PLMPDMBOMCompareUX.js"></script>
+    <script src="./assets/js/Utils/PreferenceUtil.js"></script>
+    <script src="./assets/js/Configuration/WidgetConfiguration.js"></script>
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./assets/css/PLMPDMBOMCompareUX.css">
+
+    <script type="text/javascript">
+        //<![CDATA[
+        require(['VALMET/PLMPDMBOMCompareUX/PLMPDMBOMCompareUX'],
+            function(BCWidget) {
+                'use strict';
+                widget.addEvents({
+                    onLoad: BCWidget.init,
+                    onResize: BCWidget.resize,
+                    onRefresh: BCWidget.refresh
+                });
+            }
+        );
+        //]]>
+    </script>
+</head>
+<body />
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        table {
+            border: double;
+        }
+
+        tbody>tr:nth-of-type(odd) {
+            background-color: #f2f2f2;
+        }
+
+        thead {
+            background-color: #d3d3d3;
+        }
+
+        th,
+        td {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+    <title><%=MAIL_SUBJECT%></title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Revision</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody><%=ERROR_MESSAGE_FROM_PDM%></tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        This email may contain confidential and/or legally privileged information. For any mismatch , please inform concern person immediately
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mapping>
+    <objects>
+        <expand-up>false</expand-up>
+        <expand-down>true</expand-down>
+        <expand-level>99</expand-level>
+        <data-fetch-limit>1</data-fetch-limit>
+        <expand-rel-where></expand-rel-where>
+        <expand-bus-where></expand-bus-where>
+        <object type="CreateAssembly">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label>name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <field_label>Title</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_Name]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english</source_name>
+                    <field_label>notes</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>				
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_EU</source_name>
+                    <field_label>Commodity Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_EU]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_US</source_name>
+                    <field_label>Commodity Code US</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_US]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_CH</source_name>
+                    <field_label>Commodity Code CH</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_CH]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Number</source_name>
+                    <field_label>Drawing Number</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Number]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMReference.V_DerivedFrom</source_name>
+                    <field_label>Source Item</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMReference.V_DerivedFrom]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				                
+                <attribute isProperty="true">
+                    <source_name>type</source_name>
+                    <field_label>type</field_label>
+                    <data-type>String</data-type>
+                    <selectable>type</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Revision</source_name>
+                    <field_label>Drawing Revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Revision]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Weight</source_name>
+                    <field_label>Weight</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[DELFmiFunctionPPRCreateReference.V_EstimatedWeight]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="true">
+                    <source_name>revision</source_name>
+                    <field_label>revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>revision</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                 <attribute isProperty="false">
+                    <source_name>Material</source_name>
+                    <field_label>Material</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Material]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Item size</source_name>
+                    <field_label>Size</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Item_Size]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Standard</source_name>
+                    <field_label>Standard</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Standard]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_Selection_Code</source_name>
+                    <field_label>Selection Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Selection_Code]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="true">
+                    <source_name>current</source_name>
+                    <field_label>State</field_label>
+                    <data-type>String</data-type>
+                    <selectable>current</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_description</source_name>
+                    <field_label>Description</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_description]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>		
+            </attributes>
+        </object>
+        
+        <object type="VAL_VALComponentMaterial">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label>name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <field_label>Title</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_Name]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english</source_name>
+                    <field_label>notes</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>				
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_EU</source_name>
+                    <field_label>Commodity Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_EU]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_US</source_name>
+                    <field_label>Commodity Code US</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_US]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_CH</source_name>
+                    <field_label>Commodity Code CH</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_CH]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Number</source_name>
+                    <field_label>Drawing Number</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Number]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMReference.V_DerivedFrom</source_name>
+                    <field_label>Source Item</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMReference.V_DerivedFrom]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				                
+                <attribute isProperty="true">
+                    <source_name>type</source_name>
+                    <field_label>type</field_label>
+                    <data-type>String</data-type>
+                    <selectable>type</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Revision</source_name>
+                    <field_label>Drawing Revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Revision]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Weight</source_name>
+                    <field_label>Weight</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[DELFmiFunctionPPRCreateReference.V_EstimatedWeight]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="true">
+                    <source_name>revision</source_name>
+                    <field_label>revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>revision</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                 <attribute isProperty="false">
+                    <source_name>Material</source_name>
+                    <field_label>Material</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Material]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Item size</source_name>
+                    <field_label>Size</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Item_Size]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Standard</source_name>
+                    <field_label>Standard</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Standard]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_Selection_Code</source_name>
+                    <field_label>Selection Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Selection_Code]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				
+            </attributes>
+        </object> 
+        <object type="DELFmiProcessPrerequisitePort">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label>name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <field_label>Title</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_Name]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english</source_name>
+                    <field_label>notes</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>				
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_EU</source_name>
+                    <field_label>Commodity Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_EU]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_US</source_name>
+                    <field_label>Commodity Code US</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_US]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_CH</source_name>
+                    <field_label>Commodity Code CH</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_CH]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Number</source_name>
+                    <field_label>Drawing Number</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Number]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMReference.V_DerivedFrom</source_name>
+                    <field_label>Source Item</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMReference.V_DerivedFrom]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				                
+                <attribute isProperty="true">
+                    <source_name>type</source_name>
+                    <field_label>type</field_label>
+                    <data-type>String</data-type>
+                    <selectable>type</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Revision</source_name>
+                    <field_label>Drawing Revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Revision]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Weight</source_name>
+                    <field_label>Weight</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[DELFmiFunctionPPRCreateReference.V_EstimatedWeight]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="true">
+                    <source_name>revision</source_name>
+                    <field_label>revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>revision</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                 <attribute isProperty="false">
+                    <source_name>Material</source_name>
+                    <field_label>Material</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Material]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Item size</source_name>
+                    <field_label>Size</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Item_Size]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Standard</source_name>
+                    <field_label>Standard</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Standard]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_Selection_Code</source_name>
+                    <field_label>Selection Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Selection_Code]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				
+            </attributes>
+        </object>
+        
+        <object type="VAL_VALComponent">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label>name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <field_label>Title</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_Name]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english</source_name>
+                    <field_label>notes</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Item_Purchasing_Text_in_english]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>				
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_EU</source_name>
+                    <field_label>Commodity Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_EU]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_US</source_name>
+                    <field_label>Commodity Code US</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_US]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMM_.MBOM_Commondity_Code_CH</source_name>
+                    <field_label>Commodity Code CH</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Commondity_Code_CH]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Number</source_name>
+                    <field_label>Drawing Number</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Number]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMReference.V_DerivedFrom</source_name>
+                    <field_label>Source Item</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMReference.V_DerivedFrom]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				                
+                <attribute isProperty="true">
+                    <source_name>type</source_name>
+                    <field_label>type</field_label>
+                    <data-type>String</data-type>
+                    <selectable>type</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMReference.MBOM_Drawing_Revision</source_name>
+                    <field_label>Drawing Revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMReference.MBOM_Drawing_Revision]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Weight</source_name>
+                    <field_label>Weight</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[DELFmiFunctionPPRCreateReference.V_EstimatedWeight]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="true">
+                    <source_name>revision</source_name>
+                    <field_label>revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>revision</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                 <attribute isProperty="false">
+                    <source_name>Material</source_name>
+                    <field_label>Material</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Material]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Item size</source_name>
+                    <field_label>Size</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMM_.MBOM_Item_Size]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>Standard</source_name>
+                    <field_label>Standard</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Standard]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                
+                <attribute isProperty="false">
+                    <source_name>MBOM_Selection_Code</source_name>
+                    <field_label>Selection Code</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_Selection_Code]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+				
+            </attributes>
+        </object> 
+    </objects>
+    <relationships>
+        <relationship name="DELFmiFunctionIdentifiedInstance">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label>Name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMInstance.MBOM_Position</source_name>
+                    <field_label>Position</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMInstance.MBOM_Position]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMInstance.MBOM_Set_Quantity</source_name>
+                    <field_label>Qty</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMInstance.MBOM_Set_Quantity]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+            </attributes>
+        </relationship>
+        <relationship name="ProcessInstanceContinuous">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label>Name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMInstance.MBOM_Position</source_name>
+                    <field_label>Position</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMInstance.MBOM_Position]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMInstance.MBOM_Set_Quantity</source_name>
+                    <field_label>Qty</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMInstance.MBOM_Set_Quantity]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+            </attributes>
+        </relationship>
+    </relationships>
+</mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<relationships>
+    <relationship FromType="Hardware Product" name="Product Configuration" discriminator="" ToType="Product Configuration">
+        <Interfaces></Interfaces>
+        <attributes>
+<!--            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            <attribute>
+                <source_name>Net quantity</source_name>
+                <destination_name>MBOM_MBOMPDMINST.MBOM_PDM_Quantity</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMPDMINST.MBOM_PDM_Quantity]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>-->
+        </attributes>
+    </relationship>
+</relationships>

@@ -1,0 +1,1 @@
+#UIAttributeName:UIAttributeValue/TableAttributeName:isSelected:isSingleAttributeUpdate:isChangable:isUpdatable:RelationshipAttrIDHeader

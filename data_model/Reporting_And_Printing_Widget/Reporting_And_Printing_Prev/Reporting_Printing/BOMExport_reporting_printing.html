@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- Copyright 2018 , VALMET. All rights reserved.
+This widget has been implemented following the
+Dassault Systems Developer's Guide(V5 and V6 Toolkit) for R2018x.
+Please consult the document for better understanding of how Enovia widgets work.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:widget="http://www.netvibes.com/ns/"> 
+    <head>
+        <title></title>
+        <link rel="icon" type="image/ico" href="img/valmet_icon.ico"/>
+        <!-- Application Metas -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="A2N" />
+        <meta name="description" content="widget" />
+        <meta name="autoRefresh" content="0" />	
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script type="text/javascript" src="./js/ReportingAndPrinting.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+            console.log('using strict.');
+            'use strict';
+            console.log('use strict declared');
+            var dependencies = dependencies || [];
+            console.log("dependencies declared.");
+            require(
+                {
+                },
+                [
+                    /*
+                     * This module has been defined in js/TranslationManagement.js file
+                     */
+                    'VALCON/ReportingAndPrinting/ReportingAndPrinting'
+                ].concat(dependencies),
+                function (TMWidget) {
+                    var myWidget = {
+                        /*
+                         * called onload
+                         * creates an instance of the module VALMET/ReportingAndPrinting/ReportingAndPrinting
+                         */
+                        onLoad: function () {
+                            console.log('onLoad');
+                            var options = {droppable: true};
+                            this.myWidget = new TMWidget(widget, widget.body, options);
+                            this.myWidget.inject(widget.body.empty());
+
+                        },
+                        onRefresh: function () {
+                            console.log('onRefresh');
+                            this.myWidget.refresh();
+                        }
+                    };
+                    try {
+                        widget.addEvent('onRefresh', myWidget.onRefresh);
+                        widget.addEvent('onLoad', myWidget.onLoad);
+                    } catch (error) {
+                        console.log('ERROR: ' + error);
+                    }
+                }
+            );
+            console.log("Require module execution done");
+        </script>
+        <style>
+           .dual-list {
+                margin-top: 8px;
+            }
+            .list-group {
+                max-height: 300px;
+                min-height: 300px;
+                overflow-y: scroll;
+            }
+            .list-left li, .list-right li {
+                cursor: pointer;
+            }
+            .list-arrows {
+                padding-top: 100px;
+            }
+            .list-arrows button {
+                margin-bottom: 20px;
+            }
+            .dual-list-buttons {
+                min-width: 10px;
+                background-color: #ffffff;
+            }
+            .list-group-item.active {
+                color: black;
+                background-color: #e2e4e3;
+                border-color: darkgray;
+            }
+        </style>
+    </head>
+    <body>
+      <!--  <p>Loading...</p> -->
+		<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+		<div class="container">
+			<form class="form-horizontal" action="submitscript.jsp" target="dummyframe">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Report Parameters</legend>
+                    <div class="form-group">
+                        <!-- Item Name -->
+                        <label class="col-md-2 control-label" for="itemName">Item Name</label>
+                        <div class="col-md-4">
+                            <input type="text" id="itemName" name="itemName" class="form-control" readonly>
+                        </div>
+                        <!-- Report Name -->
+                        <label class="col-md-2 control-label" for="selectName">Report Name</label>
+                        <div class="col-md-4">
+                            <select id="selectName" name="selectName" class="form-control" disabled readonly>
+								<option value="mbom">MBOM Report</option>
+                                <option value="ebom">EBOM Report</option>
+                                <option value="singleBom">Single BOM Report</option>
+                                <option value="multiBom">Multi BOM Report</option>
+                            </select>
+                        </div>
+                    </div>
+                     
+                    <div class="form-group">
+                        <!-- Report format -->
+                        <label class="col-md-2 control-label" for="reportFormat">Report Format</label>
+                        <div class="col-md-4">
+                            <select id="reportFormat" name="reportFormat" class="form-control">
+                                <option selected="selected" value="pdf">PDF</option>
+                                <option value="xls">XLS</option>
+                            </select>
+                        </div>
+                        <!-- Report confidentiality -->
+                        <label class="col-md-2 control-label" for="selectbasic">Confidentiality</label>
+                        <div class="col-md-4">
+                            <select id="selectbasic" name="selectbasic" class="form-control" disabled readonly>
+                                <option value="confidential">CONFIDENTIAL</option>
+                                <option value="internal">INTERNAL</option>
+                                <option value="public">PUBLIC</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <!-- Template language -->
+                        <label class="col-md-2 control-label" for="reportLang">Template Language</label>
+                        <div class="col-md-4">
+                            <select id="reportLang" name="reportLang" class="form-control">
+				<option value="zh">Chinese</option>
+                                <option selected="selected" value="en">English</option>
+				<option value="fn">Finnish</option>
+				<option value="fr">French</option>
+				<option value="de">German</option>
+				<option value="sv">Swedish</option>
+                               <!-- <option value="jp">Jp</option> -->
+                            </select>
+                        </div>
+
+                        <!-- BOM level -->
+                        <label class="col-md-2 control-label" for="reportFormat">BOM level</label>
+                        <div class="col-md-4">
+                            <input type="number" id="bomLevel" name="bomLevel" value="99" min="0" max="99" class="form-control" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                                <label class="col-md-2 control-label" for="attr">Attributes</label>
+                                <div class="dual-list list-left col-md-4">
+                                    <div class="well text-left">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="btn-group">
+                                                    <a class="btn btn-default dual-list-buttons selector" title="select all"><i id="checkBoxLeft" class="glyphicon glyphicon-check selected"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="input-group">
+                                                    <input type="text" name="SearchDualList" class="form-control" placeholder="search" />
+                                                    <span class="input-group-addon glyphicon glyphicon-search"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="list-group">
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="list-arrows col-md-2 text-center">
+                                    <button class="btn  dual-list-buttons btn-default move-left">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </button>
+
+                                    <button class="btn btn-default dual-list-buttons move-right">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </button>
+                                </div>
+
+                                <div class="dual-list list-right col-md-4">
+                                    <div class="well">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="btn-group">
+                                                    <a class="btn btn-default dual-list-buttons selector" title="select all"><i id="checkBoxRight" class="glyphicon glyphicon-check selected"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="input-group">
+                                                    <input type="text" name="SearchDualList" class="form-control" placeholder="search" />
+                                                    <span class="input-group-addon glyphicon glyphicon-search"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="list-group">
+                                        </ul>
+                                    </div>
+                                </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="submit"></label>
+                        <div class="col-md-6">
+                            <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

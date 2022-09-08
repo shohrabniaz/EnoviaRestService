@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<element>
+	<relationshipPattern>*</relationshipPattern>
+	<typePattern>VPMReference,VPMRepReference</typePattern>
+	<getTo>false</getTo>
+	<getFrom>true</getFrom>
+	<recursionLevel>0</recursionLevel>
+	<limit>50</limit>
+	<tableName>EWC_PRODUCT_STRUCTURE</tableName>
+	<objectIdFlag>true</objectIdFlag>
+	<depthFlag>true</depthFlag>
+        <attributeConf>Attributes_product_structure.conf</attributeConf>
+        <additionalServices></additionalServices>
+</element>

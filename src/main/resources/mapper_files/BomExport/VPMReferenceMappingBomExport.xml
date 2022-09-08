@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mapping>
+    <objects>
+        <expand-up>false</expand-up>
+        <expand-down>true</expand-down>
+        <expand-level>99</expand-level>
+        <data-fetch-limit>1</data-fetch-limit>
+        <expand-rel-where></expand-rel-where>
+        <expand-bus-where></expand-bus-where>
+        <object type="VPMReference" typeShortName="PHP">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>type</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Type</field_label>
+                    <data-type>String</data-type>
+                    <selectable>type</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>id</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="false">id</field_label>
+                    <data-type>String</data-type>
+                    <selectable>id</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>level</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Level</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[level]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                  
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>physicalid</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="false">physicalid</field_label>
+                    <data-type>String</data-type>
+                    <selectable>physicalid</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label  alt-label="" isPreSelected="true" isVisibleInList="true">name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>revision</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>revision</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>current</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="true">Status</field_label>
+                    <data-type>String</data-type>
+                    <selectable>current</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <field_label  alt-label="" isPreSelected="true" isVisibleInList="true">Title</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_Name]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>TD_TechnicalDesignation.TD_TechnicalDesignation</source_name>
+                    <field_label alt-label="" isPreSelected="true" isVisibleInList="true">Technical Designation</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[TD_TechnicalDesignation.TD_TechnicalDesignation]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <!--                <attribute isProperty="false">
+                    <source_name>PLMEntity.PLM_ExternalID</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="false">ExternalID</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.PLM_ExternalID]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute> 
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_description</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">Description</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_description]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute> -->
+                <attribute isProperty="false">
+                    <source_name>TRS_TermID.TRS_TermID</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">Term_ID</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[TRS_TermID.TRS_TermID]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>ENG_ManufacturingMaterial.ENG_Length</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Length</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ENG_ManufacturingMaterial.ENG_Length]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>ENG_ManufacturingMaterial.ENG_Width</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Width</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ENG_ManufacturingMaterial.ENG_Width]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>XP_VPMReference_Ext.E_XParamStr16B</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Standard</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[XP_VPMReference_Ext.E_XParamStr16B]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>CUS_Size.CUS_Size</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Size</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[CUS_Size.CUS_Size]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ENG_ManufacturingMaterial.ENG_SuggestedMaterial</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Material</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ENG_ManufacturingMaterial.ENG_SuggestedMaterial]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMPDM.MBOM_PDM_Drawing_Number</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Drawing Number</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.PLM_ExternalID]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ITMTEXTS_ItemCommonText.ITMTEXTS_ItemCommonText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">item common text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ITMTEXTS_ItemCommonText.ITMTEXTS_ItemCommonText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ITEMTEXTS_PurchasingText.ITEMTEXTS_PurchasingText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">item purchasing text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ITEMTEXTS_PurchasingText.ITEMTEXTS_PurchasingText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>uniquekey</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Unique Key</field_label>
+                    <data-type>String</data-type>
+                    <selectable>uniquekey</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>MBOM_MBOMERP.MBOM_ReferenceItem</source_name>
+                    <field_label alt-label="" isPreSelected="true" isVisibleInList="true">Reference Item</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMERP.MBOM_ReferenceItem]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+            </attributes>
+        </object>
+        <!-- We know that, object type: "drawing" does not exist. However, it is done to support short name replacement 
+                and now Drawing objects will not get added by default for VPMReference objects without Drawing selection 
+                as well.
+        -->
+        <object type="drawing" typeShortName="D">
+            <attributes>
+                <attribute isProperty="true">
+                    <source_name>type</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Type</field_label>
+                    <data-type>String</data-type>
+                    <selectable>type</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>name</source_name>
+                    <field_label  alt-label="" isPreSelected="true" isVisibleInList="true">name</field_label>
+                    <data-type>String</data-type>
+                    <selectable>name</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>level</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Level</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[level]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>revision</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="true">revision</field_label>
+                    <data-type>String</data-type>
+                    <selectable>revision</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>current</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="true">Status</field_label>
+                    <data-type>String</data-type>
+                    <selectable>current</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <field_label  alt-label="" isPreSelected="true" isVisibleInList="true">Title</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_Name]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>TD_TechnicalDesignation.TD_TechnicalDesignation</source_name>
+                    <field_label alt-label="" isPreSelected="true" isVisibleInList="true">Technical Designation</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[TD_TechnicalDesignation.TD_TechnicalDesignation]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>PLMEntity.PLM_ExternalID</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">ExternalID</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.PLM_ExternalID]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <!-- <attribute isProperty="false">
+                    <source_name>PLMEntity.V_description</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">Description</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMEntity.V_description]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>  
+                <attribute isProperty="false">
+                    <source_name>XP_VPMRepReference_Ext.Shared_Standard_Drawing</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="true">Standard</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[XP_VPMRepReference_Ext.Shared_Standard_Drawing]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute> -->
+                <attribute isProperty="false">
+                    <source_name>XP_VPMRepReference_Ext.E_XParamStr16A</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">DocId</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[XP_VPMRepReference_Ext.E_XParamStr16A]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>TRS_TermID.TRS_TermID</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">Term_ID</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[TRS_TermID.TRS_TermID]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value=""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ITMTEXTS_ItemCommonText.ITMTEXTS_ItemCommonText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">item common text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ITMTEXTS_ItemCommonText.ITMTEXTS_ItemCommonText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ITEMTEXTS_PurchasingText.ITEMTEXTS_PurchasingText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">item purchasing text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ITEMTEXTS_PurchasingText.ITEMTEXTS_PurchasingText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>DOC_DocDistributionList.DOC_DocDistributionList</source_name>
+                    <field_label  alt-label="" isPreSelected="false" isVisibleInList="false">DistributionList</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[DOC_DocDistributionList.DOC_DocDistributionList]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>MBOM_MBOMERP.MBOM_ReferenceItem</source_name>
+                    <field_label alt-label="" isPreSelected="true" isVisibleInList="true">Reference Item</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMERP.MBOM_ReferenceItem]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+
+            </attributes>
+        </object>
+    </objects>
+    <relationships>
+        <relationship relName="VPMRepInstance">
+            <attributes>
+                <attribute isProperty="false">
+                    <source_name>id</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="false">id</field_label>
+                    <data-type>String</data-type>
+                    <selectable>id</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>PLMInstance.V_description</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">bom common text</field_label>              
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMInstance.V_description]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value ="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>MBOMTEXT_PurchasingText.MBOMTEXT_PurchasingText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">bom purchasing text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOMTEXT_PurchasingText.MBOMTEXT_PurchasingText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value ="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>MBOMTEXT_ManufacturingText.MBOMTEXT_ManufacturingText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">bom manufacturing text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOMTEXT_ManufacturingText.MBOMTEXT_ManufacturingText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value ="himelli"></target-system>
+                </attribute>
+            </attributes>
+        </relationship>
+        <relationship relName="VPMInstance">
+            <attributes>
+                <attribute isProperty="false">
+                    <source_name>id</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="false">id</field_label>
+                    <data-type>String</data-type>
+                    <selectable>id</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ENG_ManufacturingQuantity.ENG_Set_Quantity</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Qty</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ENG_ManufacturingQuantity.ENG_Set_Quantity]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>ENG_Position.ENG_Position</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">Position</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[ENG_Position.ENG_Position]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+                <attribute isProperty="false">
+                    <source_name>MBOM_MBOMERPInstance.MBOM_AllowStructureTransferToERP</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="false">AllowTrasnferToERP</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOM_MBOMERPInstance.MBOM_AllowStructureTransferToERP]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value =""></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>PLMInstance.V_description</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">bom common text</field_label>              
+                    <data-type>String</data-type>
+                    <selectable>attribute[PLMInstance.V_description]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value ="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>MBOMTEXT_PurchasingText.MBOMTEXT_PurchasingText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">bom purchasing text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOMTEXT_PurchasingText.MBOMTEXT_PurchasingText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value ="himelli"></target-system>
+                </attribute>
+                <attribute isProperty="true">
+                    <source_name>MBOMTEXT_ManufacturingText.MBOMTEXT_ManufacturingText</source_name>
+                    <field_label alt-label="" isPreSelected="false" isVisibleInList="true">bom manufacturing text</field_label>
+                    <data-type>String</data-type>
+                    <selectable>attribute[MBOMTEXT_ManufacturingText.MBOMTEXT_ManufacturingText]</selectable>
+                    <data-format></data-format>
+                    <description></description>
+                    <target-system value ="himelli"></target-system>
+                </attribute>
+            </attributes>
+        </relationship>
+    </relationships>
+</mapping>

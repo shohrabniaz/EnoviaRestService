@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="CreateAssembly">
+            <runTimeInterfaceList>DELAsmUnitRefRequired, DELAsmLotRefRequired, MBOM_MBOMATON, TRS_TermID, TRS_ShortEnglish, MBOM_MBOMERP, MBOM_MBOMReference, TD_TechnicalDesignation</runTimeInterfaceList>
+            <attributes>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>current</destination_name>
+                    <values defaultValue="RELEASED">
+                        <value src="Active">RELEASED</value>
+                        <value src="Phase-out">RELEASED</value>
+                        <value src="End-of-Life">RELEASED</value>
+                        <value src="Discontinued">OBSOLETE</value>
+                        <value src="Frozen">FROZEN</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 current attribute</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable data</selectable>
+                    <insertable>Insertable data</insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_State</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Owner Group</source_name>
+                    <destination_name>project</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 project property</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Owner Group</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Owner_Group</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact value from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Description</source_name>
+                    <destination_name>description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable>Selectable Description</selectable>
+                    <insertable>Insertable Description</insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Unit set</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_UnitSet</destination_name>
+                    <values/>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Weight</source_name>
+                    <destination_name>DELFmiFunctionPPRCreateReference.V_EstimatedWeight</destination_name>
+                    <values/>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Drawing number</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Drawing_Number</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data got from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Bundle ID</source_name>
+                    <destination_name>TRS_TermID.TRS_TermID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Short name in English</source_name>
+                    <destination_name>TRS_ShortEnglish.TRS_ShortNameEnglish</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length>30</data_length>
+                    <is_required></is_required>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Material</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_Material</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Commodity code</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Commodity_Code_CH</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Purchase Statistics Group</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Purchase_Statistic_Group</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact value got from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <!--                <attribute>
+                    <source_name>Item size</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_ItemSize</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <!--                <attribute>
+                    <source_name>Spare part recommendation</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_Spare_Part_Recommendation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Reference item</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_ReferenceItem</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Technical designation</source_name>
+                    <destination_name>TD_TechnicalDesignation.TD_TechnicalDesignation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length paddingChar="...">100</data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Title in English</source_name>
+                    <destination_name>PLMEntity.V_Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Standard part</source_name>
+                    <destination_name>MBOM_MBOMReference.MBOM_Type</destination_name>
+                    <values defaultValue="Project_Specific">
+                        <value src="No">Project_Specific</value>
+                        <value src="Model Only/MDL">Product_Model</value>
+                        <value src="NEW/STD">Standard</value>
+                        <value src="Yes/STD">Standard</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Release Purpose</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Release_Purpose</destination_name>
+                    <values defaultValue="Production">
+                        <value src="Production">Production</value>
+                        <value src="Planning">Planning</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>This field is not a mapping of PDM. It is only for Enovia V6 attribute mapping</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Substitute item</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Substitute_Item</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Serialized</source_name>
+                    <destination_name>DELAsmUnitRefRequired.V_SerialNumberRequired</destination_name>
+                    <values defaultValue="FALSE">
+                        <value src="No">FALSE</value>
+                        <value src="Yes">TRUE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Manufacturing Item Code</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Manufacturing_Item_Code</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <!--                <attribute>
+                    <source_name>MBOM_MBOMPDM.MBOM_PDM_Revision</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Revision</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM. This field has been used for searching the item and creating a BOM structure</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <!--                <attribute>
+                    <source_name>Mastership</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_Mastership</destination_name>
+                    <values defaultValue="PDM">
+                        <value src="PDM">PDM</value>
+                        <value src="3DX">3DX</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Change information</source_name>
+                    <destination_name>PLMReference.V_versionComment</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Transferred to ERPs</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_TransferredtoERP</destination_name>
+                    <values defaultValue="false">
+                        <value src="LN1001">true</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Creator</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_CreatorPDM</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>Mastership</source_name>
+                    <destination_name>MBOM_MBOMATON.MBOM_Mastership</destination_name>
+                    <values defaultValue="3DX">
+                        <value src="ATON">ATON</value>
+                        <value src="3DX">3DX</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>LifeCycleStatus</source_name>
+                    <destination_name>MBOM_MBOMATON.MBOM_AUTLifecycleStatus</destination_name>
+                    <values>
+                        <value src=""></value>
+                        <value src="Draft">Draft</value>
+                        <value src="Demand">Demand</value>
+                        <value src="Planning">Planning</value>
+                        <value src="Specification">Specification</value>
+                        <value src="ProofofConcept">ProofofConcept</value>
+                        <value src="Design">Design</value>
+                        <value src="TechnicalReleaseTests">TechnicalReleaseTests</value>
+                        <value src="Pilot">Pilot</value>
+                        <value src="RDReady">RDReady</value>
+                        <value src="Active">Active</value>
+                        <value src="PhaseOut">PhaseOut</value>
+                        <value src="EndofLife">EndofLife</value>
+                        <value src="Discontinued">Discontinued</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Version</source_name>
+                    <destination_name>MBOM_MBOMATON.MBOM_AtonVersion</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

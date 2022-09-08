@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:widget="http://www.netvibes.com/ns/">
+
+<head>
+    <title></title>
+
+    <!-- Widget ICON -->
+    <link rel="icon" type="image/ico" href="./assets/img/valmet_icon.ico" />
+
+    <!-- Application Metas -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="brand" content="VALMET" />
+    <meta name="autoRefresh" content="0" />
+    <meta name="description" content="VALMET Project Structure Import Widget" />
+
+    <!-- VALCON AMD Modules -->
+    <link rel="stylesheet" href="./assets/css/ProjectStructureImportUX.css">
+    <script src="./assets/js/ProjectStructureImportUX.js"></script>
+    <script src="./assets/js/Configuration/WidgetConfiguration.js"></script>
+
+    <!-- Widget Initiation -->
+    <script type="text/javascript">
+        require(["VALMET/ProjectStructureImportUX/ProjectStructureImportUX"], function(PSIWidget) {
+            'use strict'
+            widget.addEvents({
+                onLoad: PSIWidget.init,
+                onRefresh: PSIWidget.refresh,
+                onResize: PSIWidget.resize
+            });
+        });
+    </script>
+</head>
+
+<body></body>
+
+</html>

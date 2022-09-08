@@ -1,0 +1,35 @@
+{
+	"status": "Success",
+	"message": null,
+	"data": [
+		{
+			"activity": "EA055502-01.00",
+			"deliUId": "A4PWYZXLXA",
+			"deliCode": "EA050102-01.00",
+			"deliDescription": "Economizer 1",
+			"deliType": "ST001",
+			"statusGroup": "PCS.V00.R01",
+			"statusGroupVersion": "PCS",
+			"deviceUId": "A4PWYZXLXA",
+			"statusList": [
+				{
+					"code": "PCS0",
+					"description": "RFQ"
+				},
+				{
+					"code": "PCS1",
+					"description": "RFQ"
+				},
+				{
+					"code": "PCS2",
+					"description": "RFQ"
+				},
+				{
+					"code": "PCS3",
+					"description": "RFQ"
+				}
+			],
+			"assingnees": "sdupatowma"
+		}
+	]
+}

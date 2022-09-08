@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="ProcessContinuousCreateMaterial">
+            <attributes>
+                <!--                <attribute>
+                                    <source_name>MBOM_MBOMPDM.MBOM_PDM_State</source_name>
+                                    <destination_name>status</destination_name>
+                                    <data-type>String</data-type>
+                                    <data-format></data-format>
+                                    <description>Keeps the exact data from PDM</description>
+                                    <data_length></data_length>
+                                    <is_required></is_required>
+                                    <selectable></selectable>
+                                    <insertable></insertable>
+                                </attribute>
+                -->                
+                <attribute>
+                    <source_name>MBOM_MBOMPDM.MBOM_PDM_Owner_Group</source_name>
+                    <destination_name>Owner Group</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact value from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMERP.MBOM_Commodity_Code_US</source_name>
+                    <destination_name>Commodity code US</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Temporary change</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMERP.MBOM_Commodity_Code_EU</source_name>
+                    <destination_name>Commodity code EU</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Temporary change</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMERP.MBOM_Commodity_Code_CH</source_name>
+                    <destination_name>Commodity code CH</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Temporary change</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMPDM.MBOM_UnitSet</source_name>
+                    <destination_name>Unit set</destination_name>
+                    <values/>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>TD_TechnicalDesignation.TD_TechnicalDesignation</source_name>
+                    <destination_name>Technical designation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length paddingChar="...">100</data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>MBOM_MBOMPDM.MBOM_PDM_Revision</source_name>
+                    <destination_name>MBOM_MBOMPDM.MBOM_PDM_Revision</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM. This field has been used for searching the item and creating a BOM structure</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMContReference.MBOM_Inventory_Unit</source_name>
+                    <destination_name>Inventory unit</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM. This field has been used for searching the item and creating a BOM structure</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="false">
+                    <source_name>VAL_VALComponentMaterial.VAL_CommercialItemFamily</source_name>
+                    <destination_name>Component Material Family</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="false">
+                    <source_name>VAL_VALComponent.VAL_CommercialItemFamily</source_name>
+                    <destination_name>Component Family</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>MBOM_MBOMContReference.MBOM_Inventory_Unit</source_name>
+                    <destination_name>Inventory unit</destination_name>
+                    <values>
+                        <value src="kg" runTimeInterfaceList="DELFmiContQuantity_Mass">kg</value>
+                        <value src="g" runTimeInterfaceList="DELFmiContQuantity_Mass">g</value>
+                        <value src="lb" runTimeInterfaceList="DELFmiContQuantity_Mass">lb</value>
+                        <value src="m" runTimeInterfaceList="DELFmiContQuantity_Length">m</value>
+                        <value src="in" runTimeInterfaceList="DELFmiContQuantity_Length">in</value>
+                        <value src="ft" runTimeInterfaceList="DELFmiContQuantity_Length">ft</value>
+                        <value src="m2" runTimeInterfaceList="DELFmiContQuantity_Area">m2</value>
+                        <value src="ft2" runTimeInterfaceList="DELFmiContQuantity_Area">ft2</value>
+                        <value src="in2" runTimeInterfaceList="DELFmiContQuantity_Area">in2</value>
+                        <value src="m3" runTimeInterfaceList="DELFmiContQuantity_Volume">m3</value>
+                        <value src="l" runTimeInterfaceList="DELFmiContQuantity_Volume">l</value>
+                        <value src="in3" runTimeInterfaceList="DELFmiContQuantity_Volume">in3</value>
+                        <value src="ft3" runTimeInterfaceList="DELFmiContQuantity_Volume">ft3</value>
+                        <value src="gal" runTimeInterfaceList="DELFmiContQuantity_Volume">gal</value> 
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                
+                <attribute requestAttribute="true">
+                    <source_name>TRS_ShortEnglish.TRS_ShortNameEnglish</source_name>
+                    <destination_name>Short name in English</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM. This field has been used for searching the item and creating a BOM structure</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMPDM.MBOM_PDM_Purchase_Statistic_Group</source_name>
+                    <destination_name>Purchase Statistics Group</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM.s</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>PLMReference.V_versionComment</source_name>
+                    <destination_name>Change information</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMPDM.MBOM_Spare_Part_Recommendation</source_name>
+                    <destination_name>Spare part recommendation</destination_name>
+                    <values>
+                        <value src="FALSE">No</value>
+                        <value src="TRUE">Yes</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMPDM.MBOM_Material</source_name>
+                    <destination_name>Material</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>DELAsmUnitRefRequired.V_SerialNumberRequired</source_name>
+                    <destination_name>Serialized</destination_name>
+                    <values>
+                        <value src="FALSE">No</value>
+                        <value src="TRUE">Yes</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMERP.MBOM_ReferenceItem</source_name>
+                    <destination_name>Reference item</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMPDM.MBOM_ItemSize</source_name>
+                    <destination_name>Item size</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>PLMEntity.V_Name</source_name>
+                    <destination_name>Title in English</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                
+                <attribute requestAttribute="true">
+                    <source_name>MBOM_MBOMPDM.MBOM_PDM_Drawing_Number</source_name>
+                    <destination_name>Drawing number</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+
+    <relationships>
+        <relationship FromType="ProcessContinuousCreateMaterial" name="ProcessInstanceContinuous" discriminator="" ToType="CreateAssembly">
+            <attributes>
+                <attribute>
+                    <source_name>MBOM_MBOMERPInstance.MBOM_Position</source_name>
+                    <destination_name>Position</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>ProcessInstanceContinuous.V_UsageContCoeff</source_name>
+                    <destination_name>Net quantity</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>MBOM_MBOMPDMContInstance.MBOM_Width</source_name>
+                    <destination_name>Width</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>MBOM_MBOMPDMContInstance.MBOM_Length</source_name>
+                    <destination_name>Length</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                my changes-->
+<!--                <attribute>
+                    <source_name>MBOM_MBOMERP.MBOM_Commodity_Code_EU</source_name>
+                    <destination_name>Commodity Code EU</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Temporary change</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>MBOM_MBOMERP.MBOM_Commodity_Code_US</source_name>
+                    <destination_name>Commodity Code US</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Temporary change</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>MBOM_MBOMERP.MBOM_Commodity_Code_CH</source_name>
+                    <destination_name>Commodity Code CH</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Temporary change</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+            </attributes>
+        </relationship>
+    </relationships>
+    <properties>
+        <property>
+            <attributes>
+                <attribute>
+                    <source_name>type</source_name>
+                    <destination_name>type</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>name</source_name>
+                    <destination_name>name</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>revision</source_name>
+                    <destination_name>revision</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>id</source_name>
+                    <destination_name>id</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>owner</source_name>
+                    <destination_name>owner</destination_name>
+                </attribute>
+                <attribute requestAttribute="true">
+                    <source_name>current</source_name>
+                    <destination_name>status</destination_name>
+                    <values>
+                        <value src="OBSOLETE">forbidden</value>
+                        <value src="IN_WORK">Draft</value>
+                        <value src="RELEASED">Expiring</value>
+                    </values>
+                </attribute>
+                <attribute>
+                    <source_name>description</source_name>
+                    <destination_name>description</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>policy</source_name>
+                    <destination_name>policy</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>project</source_name>
+                    <destination_name>project</destination_name>
+                </attribute>
+                <attribute>
+                    <source_name>organization</source_name>
+                    <destination_name>organization</destination_name>
+                </attribute>
+            </attributes>
+        </property>
+    </properties>
+</itemImportMapping>

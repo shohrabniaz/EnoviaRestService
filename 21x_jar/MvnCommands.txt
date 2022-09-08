@@ -1,0 +1,7 @@
+mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\eMatrixServletRMI.jar" -DgroupId=com.bjit.plmkey.21x.eMatrixServletRMI -DartifactId=eMatrixServletRMI -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\FcsClient.jar" -DgroupId=com.bjit.plmkey.21x.FcsClient -DartifactId=FcsClient -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\framework.jar" -DgroupId=com.bjit.plmkey.21x.framework -DartifactId=framework -Dversion=1.0 -Dpackaging=jar
+#mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\LNIntegration-1.0.jar" -DgroupId=com.bjit.lnintegration.21x.LNIntegration -DartifactId=LNIntegration -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\arialUnicode.jar" -DgroupId=unicode.ArialUnicode -DartifactId=ArialUnicode -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\UnitOf.jar" -DgroupId=Unit.converter -DartifactId=UnitOf -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile="E:\Important\Jenkins\21x_jar\CommonCodeUtility-21.0.jar" -DgroupId=com.bjit.integration.21x.CommonCodeUtil -DartifactId=CommonCodeUtility -Dversion=21.0 -Dpackaging=jar

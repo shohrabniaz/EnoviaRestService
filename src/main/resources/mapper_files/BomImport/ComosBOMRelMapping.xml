@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<relationships>
+    <!--    <relationship FromType="RFLVPMLogicalSystemReference" name="RFLVPMLogicalSystemInstance" discriminator="" ToType="RFLVPMLogicalSystemReference"></relationship>
+    <relationship FromType="RFLVPMLogicalSystemReference" name="EnsLogicalEquipmentInst" discriminator="" ToType="EnsLogicalEquipment"></relationship>-->
+    
+    
+    <relationship FromType="Plant" name="RFLVPMLogicalSystemInstance" discriminator="" ToType="Unit">
+    </relationship>
+<!--    <relationship FromType="Plant" name="RFLVPMLogicalRepInstance" discriminator="" ToType="Schema_Log">
+    </relationship>-->
+    <relationship FromType="Unit" name="RFLVPMLogicalSystemInstance" discriminator="" ToType="Sub Unit">
+    </relationship>
+<!--    <relationship FromType="Unit" name="RFLVPMLogicalRepInstance" discriminator="" ToType="Schema_Log">
+    </relationship>-->
+    <relationship FromType="Sub Unit" name="EnsLogicalEquipmentInst" discriminator="" ToType="Device Position">
+    </relationship>  
+<!--    <relationship FromType="Sub Unit" name="RFLVPMLogicalRepInstance" discriminator="" ToType="Schema_Log">
+    </relationship>  -->
+</relationships>

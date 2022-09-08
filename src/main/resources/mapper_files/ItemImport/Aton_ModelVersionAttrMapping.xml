@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="ModelVersion">
+            <runTimeInterfaceList></runTimeInterfaceList>
+            <attributes>
+		<attribute>
+                    <source_name>title</source_name>
+                    <destination_name>title</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <data_length></data_length>
+                    <is_required>true</is_required>
+                </attribute>	
+		<attribute>
+                    <source_name>status</source_name>
+                    <destination_name>status</destination_name>
+<!--                        <values defaultValue="Active">
+                        <value src="Active">Active</value>
+                        <value src="Phase-out">Phase-out</value>
+                        <value src="End-of-Life">End-of-Life</value>
+						<value src="End of Life">End of Life</value>
+                        <value src="Discontinued">Discontinued</value>
+			<value src="Draft">Draft</value>
+                        <value src="Demand">Demand</value>
+                        <value src="Planning">Planning</value>
+                        <value src="Specification">Specification</value>
+                        <value src="Proof of Concept">Proof of Concept</value>
+                        <value src="Design">Design</value>
+                        <value src="Technical Release Tests">Technical Release Tests</value>
+                        <value src="Field Tests">Field Tests</value>
+                        <value src="Pilot">Pilot</value>
+                        <value src="RD Ready - LEGACY">RDReady</value>
+                    </values>-->
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_required>true</is_required>
+                </attribute>
+                <attribute>
+                    <source_name>description</source_name>
+                    <destination_name>description</destination_name>
+                    <values defaultValue="MV request by ATON"></values>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+<!--                <attribute>
+                    <source_name>basePrice</source_name>
+                    <destination_name>basePrice</destination_name>
+                    <values defaultValue="0.0"></values>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+<!--                <attribute>
+                    <source_name>ownerGroup</source_name>
+                    <destination_name>ownerGroup</destination_name>
+                    <values defaultValue="Aton Items"></values>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>MOD_Mastership</source_name>
+                    <destination_name>MOD_Mastership</destination_name>
+                    <values defaultValue="3DX">
+                        <value src="ATON">ATON</value>
+                        <value src="3DX">3DX</value>
+                    </values>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <lazy-interface>
+                        <interfaces>MOD_AutomationProductExt</interfaces>
+                    </lazy-interface>
+                </attribute>
+                <attribute>
+                    <source_name>salesStatisticalGroup</source_name>
+                    <destination_name>Sales statistical group SSG</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>version</source_name>   <!-- don't change it-->
+                    <destination_name>Aton Version</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>AUT Lifecycle Status</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <values defaultValue="Undefined">
+                        <value src="Active">Active</value>
+                        <value src="Phase-out">Phase out</value>
+                        <value src="End-of-Life">End of Life</value>
+                        <value src="End of Life">End of Life</value>
+                        <value src="Discontinued">Discontinued</value>
+			<value src="Draft">Draft</value>
+                        <value src="Demand">Demand</value>
+                        <value src="Planning">Planning</value>
+                        <value src="Specification">Specification</value>
+                        <value src="Proof of Concept">Proof of Concept</value>
+                        <value src="Design">Design</value>
+                        <value src="Technical Release Tests">Technical Release Tests</value>
+                        <value src="Field Tests">Field Tests</value>
+                        <value src="Pilot">Pilot</value>
+                        <value src="RDReady">RDReady</value>
+                        <value src="RD Ready - LEGACY">RDReady</value>
+                    </values>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>soldAsSaprePart</source_name>
+                    <destination_name>Spare part category VED</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>type</source_name>
+                    <destination_name>Type</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <values defaultValue="Undefined">
+                        <value src="Undefined">Undefined</value>
+                        <value src="Hardware">Hardware</value>
+                        <value src="Software">Software</value>
+                        <value src="Combination">Combination</value>
+			<value src="License">License</value>
+                        <value src="Licensed software">Licensed software</value>
+                        <value src="Product software">Product software</value>
+                        <value src="Service">Service</value>
+                        <value src="Work">Work</value>
+                    </values>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>group</source_name>
+                    <destination_name>Product Group</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>licenseType</source_name> <!-- don't change it-->
+                    <destination_name>AS License Type</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <values defaultValue="Undefined">
+                        <value src="Access">Access</value>
+                        <value src="CapacityConsumer">CapacityConsumer</value>
+                        <value src="CapacityProvider">CapacityProvider</value>
+                        <value src="Feature">Feature</value>
+                    </values>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>pricingType</source_name>
+                    <destination_name>License Pricing Type</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <values defaultValue="Undefined">
+                        <value src="Developer">Developer</value>
+                        <value src="Perpetual">Perpetual</value>
+                        <value src="PerpetualUpgrade">PerpetualUpgrade</value>
+                        <value src="Subscription">Subscription</value>
+			<value src="Trial">Trial</value>
+                    </values>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>capacityProviderFeatureID</source_name>
+                    <destination_name>License Capacity Provider ID</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+                <attribute>
+                    <source_name>weightFactor</source_name>
+                    <destination_name>License Weight Factor</destination_name>
+                    <description></description>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                    <is_cls_attr>true</is_cls_attr>
+                </attribute>
+            </attributes>
+        </object>
+		
+    </objects>
+</itemImportMapping>
+
+

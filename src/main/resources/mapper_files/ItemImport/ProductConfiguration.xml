@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Product Configuration">
+            <!--<runTimeInterfaceList>DELAsmUnitRefRequired, DELAsmLotRefRequired, MBOM_MBOMPDM, TRS_TermID, TRS_ShortEnglish, MBOM_MBOMERP, MBOM_MBOMReference</runTimeInterfaceList>-->
+            <attributes>
+                <attribute>
+                    <source_name>Product Configuration Purpose</source_name>
+                    <destination_name>Product Configuration Purpose</destination_name>
+                    <values defaultValue="Evaluation">
+                        <value src="Evaluation">Evaluation</value>
+                        <value src="Order">Order</value>
+                        <value src="Accessory">Accessory</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact data from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Validation Status</source_name>
+                    <destination_name>Validation Status</destination_name>
+                    <values defaultValue="Not Validated">
+                        <value src="Not Validated">Not Validated</value>
+                        <value src="Validation Passed">Validation Passed</value>
+                        <value src="Validation Failed">Validation Failed</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Enovia V6 project property</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Completeness Status</source_name>
+                    <destination_name>Completeness Status</destination_name>
+                    <values defaultValue="Complete">
+                        <value src="Complete">Complete</value>
+                        <value src="Partial">Partial</value>
+                        <value src="Hybrid">Hybrid</value>
+                        <value src="Unknown">Unknown</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description>Keeps the exact value from PDM</description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Design Validation Status</source_name>
+                    <destination_name>Design Validation Status</destination_name>
+                    <values defaultValue="Not Validated">
+                        <value src="Not Validated">Not Validated</value>
+                        <value src="Validation Passed">Validation Passed</value>
+                        <value src="Validation Failed">Validation Failed</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <!--                <attribute>
+                    <source_name>Filter Compiled Form</source_name>
+                    <destination_name>Filter Compiled Form</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Filter Expression Binary</source_name>
+                    <destination_name>Filter Expression Binary</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Filter Ordered Criteria</source_name>
+                    <destination_name>Filter Ordered Criteria</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>Filter Ordered Criteria Dictionary</source_name>
+                    <destination_name>Filter Ordered Criteria Dictionary</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>-->
+                <attribute>
+                    <source_name>project</source_name>
+                    <destination_name>project</destination_name>
+                    <values defaultValue="TESTING"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>organization</source_name>
+                    <destination_name>organization</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+                <attribute>
+                    <source_name>marketingName</source_name>
+                    <destination_name>Marketing Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                    <selectable></selectable>
+                    <insertable></insertable>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

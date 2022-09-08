@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="Document">
+            <attributes>
+                <!-- <attribute>
+                    <source_name>name</source_name>
+                    <destination_name>Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute> -->
+                <attribute>
+                    <source_name>Title in English</source_name>
+                    <destination_name>Title</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Technical designation</source_name>
+                    <destination_name>description</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>current</destination_name>
+                    <values>
+                        <value src="Draft">IN_WORK</value>
+                        <value src="Expiring">RELEASED</value>
+                        <value src="Released">RELEASED</value>
+                        <value src="Forbidden">OBSOLETE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

@@ -1,0 +1,165 @@
+.dual-list {
+    margin-top: 8px;
+}
+
+.list-group {
+    max-height: 300px;
+    min-height: 300px;
+    overflow-y: scroll;
+    margin-top: 10px;
+}
+
+.list-left li,
+.list-right li {
+    cursor: pointer;
+}
+
+.list-arrows {
+    padding-top: 28px;
+}
+
+.list-arrows button {
+    margin-bottom: 20px;
+}
+
+.dual-list-buttons {
+    min-width: 10px;
+    background-color: #ffffff;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.list-group-item.active {
+    color: black;
+    background-color: #e2e4e3;
+    border-color: darkgray;
+}
+
+.form-horizontal .select:not(.input-sm)::before {
+    right: 0px !important;
+}
+
+.well {
+    padding: 10px;
+    border: solid 1px #c8c8c8;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+.btn .fonticon {
+    margin: 0px !important;
+}
+
+#checkBoxLeft {
+    font-size: 1.5em !important;
+}
+
+#checkBoxLeftParent {
+    padding: 3px 16px 3px 9px !important;
+}
+
+#checkBoxRight {
+    font-size: 1.5em !important;
+}
+
+#checkBoxRightParent {
+    padding: 3px 16px 3px 9px !important;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.form .form-group li .btn {
+    min-width: 38px !important;
+}
+
+li.chooser button.btn span.fonticon-search {
+    padding-top: 0px !important;
+    float: none;
+}
+
+.thumbnail {
+    display: block;
+    margin-bottom: 0px !important;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
+    padding: 0px !important;
+}
+
+.thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 2px .4em;
+    line-height: 1.5;
+    min-height: 0;
+    font-weight: 400;
+}
+
+.dual-list-buttons {
+    min-width: 0px !important;
+}
+
+.alert {
+    height: 0px !important;
+}
+
+.reporting-printing-view {
+    height: 100%;
+    border-color: white
+}
+
+#reportingPrintingView.ds-dialog {
+    border: 0;
+    box-shadow: none;
+}
+
+.ds-dialog .form {
+    padding: 0px !important;
+}
+
+.input-error {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #ea4f37 !important;
+}
+
+.input-error:focus {
+    border-color: #ea4f37 !important;
+}
+
+.helper-error {
+    color: #ea4f37 !important;
+}
+
+.ds-detail-display.ds-dialog {
+    z-index: auto !important;
+}

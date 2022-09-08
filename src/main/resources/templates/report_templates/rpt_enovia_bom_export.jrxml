@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BOM" pageWidth="1000" pageHeight="700" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryNewPage="true" isSummaryWithPageHeaderAndFooter="true" uuid="c5efeeca-6903-45ae-aa74-60b4f7667427">
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="385"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="601"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="json"/>
+	<property name="com.jaspersoft.studio.unit." value="inch"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="inch"/>
+	<property name="net.sf.jasperreports.export.xls.show.gridlines" value="false"/>
+	<property name="net.sf.jasperreports.export.xls.one.page.per.sheet" value="false"/>
+	<property name="net.sf.jasperreports.style.evaluation.time.enabled" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.sheet.names.sheet1" value="BOM"/>
+	<property name="net.sf.jasperreports.export.xls.sheet.names.sheet2" value="Summary"/>
+	<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.freeze.row" value="7"/>
+	<style name="zebra" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 1]]></conditionExpression>
+			<style backcolor="#D3D3D3"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="data.results" uuid="4563e834-a9e5-43b5-9f0a-824948c73c73">
+		<field name="Level" class="java.lang.String">
+			<fieldDescription><![CDATA[Level]]></fieldDescription>
+		</field>
+		<field name="Position" class="java.lang.String">
+			<fieldDescription><![CDATA[Position]]></fieldDescription>
+		</field>
+		<field name="name" class="java.lang.String">
+			<fieldDescription><![CDATA[name]]></fieldDescription>
+		</field>
+		<field name="revision" class="java.lang.String">
+			<fieldDescription><![CDATA[revision]]></fieldDescription>
+		</field>
+		<field name="Drawing Number" class="java.lang.String">
+			<fieldDescription><![CDATA[Drawing Number]]></fieldDescription>
+		</field>
+		<field name="Status" class="java.lang.String">
+			<fieldDescription><![CDATA[Status]]></fieldDescription>
+		</field>
+		<field name="Title" class="java.lang.String">
+			<fieldDescription><![CDATA[Title]]></fieldDescription>
+		</field>
+		<field name="Type" class="java.lang.String">
+			<fieldDescription><![CDATA[Type]]></fieldDescription>
+		</field>
+		<field name="Standard" class="java.lang.String">
+			<fieldDescription><![CDATA[Standard]]></fieldDescription>
+		</field>
+		<field name="Material" class="java.lang.String">
+			<fieldDescription><![CDATA[Material]]></fieldDescription>
+		</field>
+		<field name="Size" class="java.lang.String">
+			<fieldDescription><![CDATA[Size]]></fieldDescription>
+		</field>
+		<field name="Weight" class="java.lang.String">
+			<fieldDescription><![CDATA[Weight]]></fieldDescription>
+		</field>
+		<field name="Length" class="java.lang.String">
+			<fieldDescription><![CDATA[Length]]></fieldDescription>
+		</field>
+		<field name="Width" class="java.lang.String">
+			<fieldDescription><![CDATA[Width]]></fieldDescription>
+		</field>
+		<field name="PCS" class="java.lang.String">
+			<fieldDescription><![CDATA[PCS]]></fieldDescription>
+		</field>
+		<field name="Qty" class="java.lang.String">
+			<fieldDescription><![CDATA[Qty]]></fieldDescription>
+		</field>
+		<field name="Inventory Unit" class="java.lang.String">
+			<fieldDescription><![CDATA[Inventory Unit]]></fieldDescription>
+		</field>
+		<field name="B" class="java.lang.String">
+			<fieldDescription><![CDATA[BOM Marking]]></fieldDescription>
+		</field>
+		<field name="T" class="java.lang.String">
+			<fieldDescription><![CDATA[Type]]></fieldDescription>
+		</field>
+		<field name="Reference Item" class="java.lang.String">
+			<fieldDescription><![CDATA[Reference Item]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="data.summaryReportData" uuid="4563e834-a9e5-43b5-9f0a-824948c73c79">
+		<field name="summaryName" class="java.lang.String">
+			<fieldDescription><![CDATA[name]]></fieldDescription>
+		</field>
+		<field name="summaryRev" class="java.lang.String">
+			<fieldDescription><![CDATA[revision]]></fieldDescription>
+		</field>
+		<field name="summaryDrwNo" class="java.lang.String">
+			<fieldDescription><![CDATA[Drawing Number]]></fieldDescription>
+		</field>
+		<field name="summaryStatus" class="java.lang.String">
+			<fieldDescription><![CDATA[Status]]></fieldDescription>
+		</field>
+		<field name="summaryTitle" class="java.lang.String">
+			<fieldDescription><![CDATA[Title]]></fieldDescription>
+		</field>
+		<field name="summarySTD" class="java.lang.String">
+			<fieldDescription><![CDATA[Type]]></fieldDescription>
+		</field>
+		<field name="summaryStandard" class="java.lang.String">
+			<fieldDescription><![CDATA[Standard]]></fieldDescription>
+		</field>
+		<field name="summaryMaterial" class="java.lang.String">
+			<fieldDescription><![CDATA[Material]]></fieldDescription>
+		</field>
+		<field name="summarySize" class="java.lang.String">
+			<fieldDescription><![CDATA[Size]]></fieldDescription>
+		</field>
+		<field name="summaryLength" class="java.lang.String">
+			<fieldDescription><![CDATA[Length]]></fieldDescription>
+		</field>
+		<field name="summaryWidth" class="java.lang.String">
+			<fieldDescription><![CDATA[Width]]></fieldDescription>
+		</field>
+		<field name="summaryWeight" class="java.lang.String">
+			<fieldDescription><![CDATA[Weight]]></fieldDescription>
+		</field>
+		<field name="TotalPCS" class="java.lang.String">
+			<fieldDescription><![CDATA[TotalPCS]]></fieldDescription>
+		</field>
+		<field name="SummaryQty" class="java.lang.String">
+			<fieldDescription><![CDATA[SummaryQty]]></fieldDescription>
+		</field>
+		<field name="summaryUnit" class="java.lang.String">
+			<fieldDescription><![CDATA[Inventory Unit]]></fieldDescription>
+		</field>
+		<field name="Reference Item" class="java.lang.String">
+			<fieldDescription><![CDATA[Reference Item]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="columnCount" class="java.lang.Integer"/>
+	<parameter name="imageLocation" class="java.lang.String"/>
+	<parameter name="rootObjectName" class="java.lang.String"/>
+	<parameter name="rootObjectRev" class="java.lang.String"/>
+	<parameter name="rootObjectDrNum" class="java.lang.String"/>
+	<parameter name="rootObjectDes" class="java.lang.String"/>
+	<parameter name="rootObjectState" class="java.lang.String"/>
+	<parameter name="rootObjectReleasedBy" class="java.lang.String"/>
+	<parameter name="rootObjectReleasedDate" class="java.lang.String"/>
+	<parameter name="Main Project Title" class="java.lang.String"/>
+	<parameter name="Project Search Key" class="java.lang.String"/>
+	<parameter name="Subtitle" class="java.lang.String"/>
+	<parameter name="Product" class="java.lang.String"/>
+	<parameter name="printStartEndPage" class="java.lang.Boolean"/>
+	<parameter name="lbl_item" class="java.lang.String"/>
+	<parameter name="lbl_revision" class="java.lang.String"/>
+	<parameter name="lbl_main_project_title" class="java.lang.String"/>
+	<parameter name="lbl_project_search_key" class="java.lang.String"/>
+	<parameter name="lbl_subtitle" class="java.lang.String"/>
+	<parameter name="lbl_template_language" class="java.lang.String"/>
+	<parameter name="lbl_eng_bom" class="java.lang.String"/>
+	<parameter name="lbl_mpit" class="java.lang.String"/>
+	<parameter name="lbl_internal" class="java.lang.String"/>
+	<parameter name="lbl_col_serial_no" class="java.lang.String"/>
+	<parameter name="lbl_col_type" class="java.lang.String"/>
+	<parameter name="lbl_col_name" class="java.lang.String"/>
+	<parameter name="lbl_col_revision" class="java.lang.String"/>
+	<parameter name="lbl_col_position" class="java.lang.String"/>
+	<parameter name="lbl_col_title" class="java.lang.String"/>
+	<parameter name="lbl_col_drawing_revision" class="java.lang.String"/>
+	<parameter name="lbl_col_pcs" class="java.lang.String"/>
+	<parameter name="lbl_col_qty" class="java.lang.String"/>
+	<parameter name="lbl_col_weight" class="java.lang.String"/>
+	<parameter name="lbl_col_drawing_number" class="java.lang.String"/>
+	<parameter name="lbl_col_level" class="java.lang.String"/>
+	<parameter name="lbl_col_status" class="java.lang.String"/>
+	<parameter name="lbl_col_length" class="java.lang.String"/>
+	<parameter name="lbl_col_width" class="java.lang.String"/>
+	<parameter name="lbl_col_unit" class="java.lang.String"/>
+	<parameter name="lbl_col_total_pcs" class="java.lang.String"/>
+	<parameter name="lbl_col_info" class="java.lang.String"/>
+	<parameter name="lbl_col_b" class="java.lang.String"/>
+	<parameter name="lbl_col_t" class="java.lang.String"/>
+	<parameter name="lbl_col_size" class="java.lang.String"/>
+	<parameter name="lbl_col_material" class="java.lang.String"/>
+	<parameter name="lbl_col_standard" class="java.lang.String"/>
+	<parameter name="lbl_r" class="java.lang.String"/>
+	<parameter name="lbl_drawing" class="java.lang.String"/>
+	<parameter name="lbl_description" class="java.lang.String"/>
+	<parameter name="lbl_status" class="java.lang.String"/>
+	<parameter name="lbl_str_nr" class="java.lang.String"/>
+	<parameter name="lbl_released_by" class="java.lang.String"/>
+	<parameter name="lbl_released_date" class="java.lang.String"/>
+	<parameter name="lbl_product" class="java.lang.String"/>
+	<parameter name="lbl_date" class="java.lang.String"/>
+	<parameter name="lbl_page" class="java.lang.String"/>
+	<parameter name="mbom_lbl_footer_description" class="java.lang.String"/>
+	<parameter name="ebom_lbl_footer_description" class="java.lang.String"/>
+	<parameter name="lbl_footer_copyright" class="java.lang.String"/>
+	<parameter name="lbl_author_title" class="java.lang.String"/>
+	<parameter name="lbl_search" class="java.lang.String"/>
+	<parameter name="lbl.item" class="java.lang.String"/>
+	<parameter name="lbl_summary_report" class="java.lang.String"/>
+	<parameter name="isSummaryRequired" class="java.lang.Boolean"/>
+	<parameter name="isMBOMReport" class="java.lang.Boolean"/>
+	<parameter name="lbl_col_reference" class="java.lang.String"/>
+	<parameter name="lbl_mbom_description" class="java.lang.String"/>
+	<parameter name="lbl_ebom_description" class="java.lang.String"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="45">
+			<image>
+				<reportElement x="0" y="0" width="60" height="20" uuid="662a420c-5c09-416d-83bb-f41451fef01d"/>
+				<imageExpression><![CDATA[$P{imageLocation}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="220" y="0" width="405" height="30" uuid="b4f125fc-7218-405a-bb0f-dcc31b4e4494"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="15" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_eng_bom}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="785" y="25" width="175" height="20" uuid="3ba026d4-581f-4272-bfbe-b42bbd4034c1"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial Unicode MS" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_internal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="0" width="30" height="30" backcolor="#FDFFBF" uuid="af411e87-c887-4c5a-ba1a-6e84c6256014">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc99905e-2b95-448b-bd31-d4e7d9848df6"/>
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_level}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="30" y="0" width="30" height="30" backcolor="#FDFFBF" uuid="1abcffe7-8792-4619-bc1c-929053331280">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_position}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="60" y="0" width="100" height="30" backcolor="#FDFFBF" uuid="276f2be4-9b60-4e09-9904-15361585cfde">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="160" y="0" width="30" height="30" backcolor="#FDFFBF" uuid="bfdb9d81-eeee-4a4c-81c8-fa70844c6aee">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_revision}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="240" y="0" width="80" height="30" backcolor="#FDFFBF" uuid="bfdb9d81-eeee-4a4c-81c8-fa70844c6aee">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+					<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_drawing_number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="320" y="0" width="50" height="30" backcolor="#FDFFBF" uuid="1abcffe7-8792-4619-bc1c-929053331280">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+					<property name="com.jaspersoft.studio.unit.x" value="inch"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_status}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="370" y="0" width="110" height="30" backcolor="#FDFFBF" uuid="b85b64e3-11e4-46d3-8e14-efb6618e6c5b">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_title}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="480" y="0" width="60" height="30" backcolor="#FDFFBF" uuid="fd135827-28e8-40fd-845c-0a94380f87be">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_type}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="540" y="0" width="60" height="30" backcolor="#FDFFBF" uuid="1abcffe7-8792-4619-bc1c-929053331280">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_standard}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="600" y="0" width="65" height="30" backcolor="#FDFFBF" uuid="1abcffe7-8792-4619-bc1c-929053331280">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_material}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="665" y="0" width="40" height="30" backcolor="#FDFFBF" uuid="1abcffe7-8792-4619-bc1c-929053331280">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_size}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="705" y="0" width="40" height="30" backcolor="#FDFFBF" uuid="6696fe78-ac4d-4980-adcf-3750236faec8">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_weight}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="745" y="0" width="40" height="30" backcolor="#FDFFBF" uuid="6696fe78-ac4d-4980-adcf-3750236faec8">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_length}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="785" y="0" width="35" height="30" backcolor="#FDFFBF" uuid="6696fe78-ac4d-4980-adcf-3750236faec8">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_width}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="820" y="0" width="50" height="30" backcolor="#FDFFBF" uuid="dd7487ba-afa1-47c3-a49e-d7427321f12e">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_pcs}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="870" y="0" width="50" height="30" backcolor="#FDFFBF" uuid="6696fe78-ac4d-4980-adcf-3750236faec8">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_qty}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="920" y="0" width="40" height="30" backcolor="#FDFFBF" uuid="184e38f1-fe67-4133-91dd-ac0f4d9aeb53">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_unit}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="190" y="0" width="50" height="30" backcolor="#FDFFBF" uuid="77248f2b-440b-4977-836a-e3754761b3a6">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+					<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+					<property name="com.jaspersoft.studio.unit.x" value="inch"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_reference}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="960" height="20" uuid="c3237c70-6b2e-43e3-aa21-5092d8b91afc"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="data.results" uuid="739746da-704b-4057-b9e7-9744dd57da42">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.results")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="20" width="960">
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="30" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe"/>
+							<box>
+								<leftPen lineWidth="1.0"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+								<paragraph leftIndent="2"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Level}==null?"":$F{Level}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="30" y="0" width="30" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe"/>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Position}==null?"":$F{Position}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="60" y="0" width="100" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{name}==null?"":$F{name}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="160" y="0" width="30" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{revision}==null?"":$F{revision}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="240" y="0" width="80" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+								<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+								<property name="com.jaspersoft.studio.unit.x" value="inch"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Drawing Number}==null?"":$F{Drawing Number}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="320" y="0" width="50" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Status}==null?"":$F{Status}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="370" y="0" width="110" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Title}==null?"":$F{Title}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="480" y="0" width="60" height="20" uuid="e527cc56-0057-44f9-9a08-09e376f4a54a">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Type}==null ? "" : ($F{Type}.replace("Project_Specific" , "PS").replace("Product_Model","PM").replace("Standard","Std").replace("Project Specific" , "PS").replace("Product Model","PM").replace("Standard","Std"))]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="540" y="0" width="60" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Standard}==null?"":$F{Standard}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="600" y="0" width="65" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Material}==null?"":$F{Material}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="665" y="0" width="40" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Size}==null?"":$F{Size}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="705" y="0" width="40" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Weight}==null?"":$F{Weight}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="745" y="0" width="40" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Length}==null?"":$F{Length}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="785" y="0" width="35" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Width}==null?"":$F{Width}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="820" y="0" width="50" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{PCS}==null?"":$F{PCS}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="870" y="0" width="50" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Qty}==null?"":$F{Qty}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="920" y="0" width="40" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Inventory Unit}==null?"":$F{Inventory Unit}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="190" y="0" width="50" height="20" uuid="077b06da-d507-47c5-b22f-d6bdacbb200b">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+								<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Reference Item}==null?"":$F{Reference Item}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+		<band height="30">
+			<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==true]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="960" height="15" backcolor="#FDFFBF" uuid="12c1d69d-5412-470f-b2bb-d76299afc542"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="190" height="15" uuid="b484423f-14f5-483c-bbcd-fb6f44992a6a">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="190" y="0" width="30" height="15" uuid="875234e8-74fd-4361-b317-69c19357aa6d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_revision}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="220" y="0" width="100" height="15" uuid="875234e8-74fd-4361-b317-69c19357aa6d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_drawing_number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="320" y="0" width="50" height="15" uuid="2dcbc459-8398-4f02-a1b6-aa377b313cae"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_status}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="295" height="15" uuid="2d958944-a1d4-42a6-8739-502945259296">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==true]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_mbom_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="295" height="15" uuid="2d958944-a1d4-42a6-8739-502945259296">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==false]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_ebom_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="665" y="0" width="120" height="15" uuid="319de1bc-68ca-412d-a145-62e1c4e2c2c1"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_released_by}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="785" y="0" width="175" height="15" uuid="1d82d712-0c06-45a4-8134-de9f4713bdca"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_released_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="15" width="960" height="15" backcolor="#FDFFBF" uuid="15b48e7e-5719-43e4-a3df-b3b416419699"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="190" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectName}==null?"":$P{rootObjectName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="190" y="0" width="30" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectRev}==null?"":$P{rootObjectRev}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="220" y="0" width="100" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectDrNum}==null?"":$P{rootObjectDrNum}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="320" y="0" width="50" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e510">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectState}==null?"":$P{rootObjectState}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="370" y="0" width="295" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectDes}==null?"":$P{rootObjectDes}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="665" y="0" width="120" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectReleasedBy}==null?"":$P{rootObjectReleasedBy}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="785" y="0" width="175" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectReleasedDate}==null?"":$P{rootObjectReleasedDate}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="30">
+			<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==true]]></printWhenExpression>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="0" width="960" height="15" backcolor="#FDFFBF" uuid="9b54ea0d-9202-4611-b3d3-07a0a7e1dcff"/>
+				<textField>
+					<reportElement x="0" y="0" width="190" height="15" uuid="1c6ad94c-f5b9-458d-b895-3b221adc18b8">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_main_project_title}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="190" y="0" width="130" height="15" uuid="ce3ffda8-a1c1-4740-b293-425125c51b48"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_project_search_key}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="320" y="0" width="345" height="15" uuid="b199f0e4-371d-4441-a0cc-7c99f215831e"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_subtitle}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="665" y="0" width="120" height="15" uuid="cf39fc31-b7f0-4532-840f-7b1e3dfd569e"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_product}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="785" y="0" width="175" height="15" uuid="d8dbbbb9-4a40-4e0f-9e22-35a6e748a78d"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="15" width="960" height="15" backcolor="#FDFFBF" uuid="6d1944c6-62c0-42d0-8114-02ae6146f3cd"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement x="0" y="0" width="190" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Main Project Title}==null?"":$P{Main Project Title}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="190" y="0" width="130" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Project Search Key} == null ? "" : $P{Project Search Key}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="320" y="0" width="345" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Subtitle} == null ? "" : $P{Subtitle}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="665" y="0" width="120" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Product} == null ? "" : $P{Product}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="785" y="0" width="175" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd").format(new Date())]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="105">
+			<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==true]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4">
+					<printWhenExpression><![CDATA[$P{isMBOMReport}==true]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mbom_lbl_footer_description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4">
+					<property name="com.jaspersoft.studio.unit.height" value="inch"/>
+					<printWhenExpression><![CDATA[$P{isMBOMReport}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ebom_lbl_footer_description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_footer_copyright}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="60" height="14" uuid="b5c36769-0880-4295-b8f0-83b954811ccb">
+					<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="330" y="40" width="50" height="15" uuid="de364abd-87a7-4ccb-8d04-8c0e61266cae"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["© Valmet"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="530" y="40" width="40" height="15" uuid="a49716bc-0ad1-49ee-a741-f86330d3549b">
+					<property name="net.sf.jasperreports.export.xls.break.after.row" value="true"/>
+					<printWhenExpression><![CDATA[$P{isSummaryRequired}==true && $P{IS_IGNORE_PAGINATION}==true]]></printWhenExpression>
+				</reportElement>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="180">
+			<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==false]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="960" height="15" backcolor="#FDFFBF" uuid="12c1d69d-5412-470f-b2bb-d76299afc542"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="190" height="15" uuid="b484423f-14f5-483c-bbcd-fb6f44992a6a">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="190" y="0" width="30" height="15" uuid="875234e8-74fd-4361-b317-69c19357aa6d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_revision}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="220" y="0" width="100" height="15" uuid="875234e8-74fd-4361-b317-69c19357aa6d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_drawing_number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="320" y="0" width="50" height="15" uuid="2dcbc459-8398-4f02-a1b6-aa377b313cae"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_status}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="295" height="15" uuid="2d958944-a1d4-42a6-8739-502945259296">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==true]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_mbom_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="295" height="15" uuid="2d958944-a1d4-42a6-8739-502945259296">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==false]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_ebom_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="665" y="0" width="120" height="15" uuid="319de1bc-68ca-412d-a145-62e1c4e2c2c1"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_released_by}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="785" y="0" width="175" height="15" uuid="1d82d712-0c06-45a4-8134-de9f4713bdca"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_released_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="15" width="960" height="15" backcolor="#FDFFBF" uuid="15b48e7e-5719-43e4-a3df-b3b416419699"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="190" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectName}==null?"":$P{rootObjectName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="190" y="0" width="30" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectRev}==null?"":$P{rootObjectRev}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="220" y="0" width="100" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectDrNum}==null?"":$P{rootObjectDrNum}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="320" y="0" width="50" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e510">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectState}==null?"":$P{rootObjectState}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="370" y="0" width="295" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectDes}==null?"":$P{rootObjectDes}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="665" y="0" width="120" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectReleasedBy}==null?"":$P{rootObjectReleasedBy}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="785" y="0" width="175" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectReleasedDate}==null?"":$P{rootObjectReleasedDate}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="30" width="960" height="15" backcolor="#FDFFBF" uuid="9b54ea0d-9202-4611-b3d3-07a0a7e1dcff"/>
+				<textField>
+					<reportElement x="0" y="0" width="190" height="15" uuid="1c6ad94c-f5b9-458d-b895-3b221adc18b8">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_main_project_title}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="190" y="0" width="130" height="15" uuid="ce3ffda8-a1c1-4740-b293-425125c51b48"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_project_search_key}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="320" y="0" width="345" height="15" uuid="b199f0e4-371d-4441-a0cc-7c99f215831e"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_subtitle}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="665" y="0" width="120" height="15" uuid="cf39fc31-b7f0-4532-840f-7b1e3dfd569e"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_product}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="785" y="0" width="175" height="15" uuid="d8dbbbb9-4a40-4e0f-9e22-35a6e748a78d"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="45" width="960" height="15" backcolor="#FDFFBF" uuid="6d1944c6-62c0-42d0-8114-02ae6146f3cd"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement x="0" y="0" width="190" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Main Project Title}==null?"":$P{Main Project Title}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="190" y="0" width="130" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Project Search Key} == null ? "" : $P{Project Search Key}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="320" y="0" width="345" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Subtitle} == null ? "" : $P{Subtitle}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="665" y="0" width="120" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Product} == null ? "" : $P{Product}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="785" y="0" width="175" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd").format(new Date())]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement x="0" y="60" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4">
+					<printWhenExpression><![CDATA[$P{isMBOMReport}==true]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mbom_lbl_footer_description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4">
+					<printWhenExpression><![CDATA[$P{isMBOMReport}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ebom_lbl_footer_description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="80" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4"/>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_footer_copyright}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="120" width="60" height="15" uuid="b5c36769-0880-4295-b8f0-83b954811ccb">
+					<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==false]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial Unicode MS" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="330" y="120" width="50" height="15" uuid="de364abd-87a7-4ccb-8d04-8c0e61266cae">
+					<property name="net.sf.jasperreports.export.xls.break.after.row" value="true"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Unicode MS" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA["© Valmet"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="140">
+			<printWhenExpression><![CDATA[$P{isSummaryRequired}==true || $P{IS_IGNORE_PAGINATION} == false]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="960" height="15" backcolor="#FDFFBF" uuid="12c1d69d-5412-470f-b2bb-d76299afc542"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="190" height="15" uuid="b484423f-14f5-483c-bbcd-fb6f44992a6a">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="190" y="0" width="30" height="15" uuid="875234e8-74fd-4361-b317-69c19357aa6d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_revision}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="220" y="0" width="100" height="15" uuid="875234e8-74fd-4361-b317-69c19357aa6d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_col_drawing_number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="320" y="0" width="50" height="15" uuid="2dcbc459-8398-4f02-a1b6-aa377b313cae"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_status}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="295" height="15" uuid="2d958944-a1d4-42a6-8739-502945259296">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==true]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_mbom_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="370" y="0" width="295" height="15" uuid="2d958944-a1d4-42a6-8739-502945259296">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==false]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_ebom_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="665" y="0" width="120" height="15" uuid="319de1bc-68ca-412d-a145-62e1c4e2c2c1"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_released_by}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement stretchType="RelativeToTallestObject" x="785" y="0" width="175" height="15" uuid="1d82d712-0c06-45a4-8134-de9f4713bdca"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_released_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="15" width="960" height="15" backcolor="#FDFFBF" uuid="15b48e7e-5719-43e4-a3df-b3b416419699"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="190" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectName}==null?"":$P{rootObjectName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="190" y="0" width="30" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectRev}==null?"":$P{rootObjectRev}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="220" y="0" width="100" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectDrNum}==null?"":$P{rootObjectDrNum}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="320" y="0" width="50" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e510">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectState}==null?"":$P{rootObjectState}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="370" y="0" width="295" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectDes}==null?"":$P{rootObjectDes}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="665" y="0" width="120" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectReleasedBy}==null?"":$P{rootObjectReleasedBy}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="785" y="0" width="175" height="15" uuid="63e8c64f-d2a5-4ca4-820a-617e1e63e539">
+						<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+						<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{rootObjectReleasedDate}==null?"":$P{rootObjectReleasedDate}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="30" width="960" height="15" backcolor="#FDFFBF" uuid="9b54ea0d-9202-4611-b3d3-07a0a7e1dcff"/>
+				<textField>
+					<reportElement x="0" y="0" width="190" height="15" uuid="1c6ad94c-f5b9-458d-b895-3b221adc18b8">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_main_project_title}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="190" y="0" width="130" height="15" uuid="ce3ffda8-a1c1-4740-b293-425125c51b48"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_project_search_key}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="320" y="0" width="345" height="15" uuid="b199f0e4-371d-4441-a0cc-7c99f215831e"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_subtitle}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="665" y="0" width="120" height="15" uuid="cf39fc31-b7f0-4532-840f-7b1e3dfd569e"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_product}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="785" y="0" width="175" height="15" uuid="d8dbbbb9-4a40-4e0f-9e22-35a6e748a78d"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_date}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="45" width="960" height="15" backcolor="#FDFFBF" uuid="6d1944c6-62c0-42d0-8114-02ae6146f3cd"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textField>
+					<reportElement x="0" y="0" width="190" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Main Project Title}==null?"":$P{Main Project Title}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="190" y="0" width="130" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Project Search Key} == null ? "" : $P{Project Search Key}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="320" y="0" width="345" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Subtitle} == null ? "" : $P{Subtitle}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="665" y="0" width="120" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{Product} == null ? "" : $P{Product}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="785" y="0" width="175" height="15" uuid="d791d7fd-ced8-4fb2-98e6-58a58d6412b1"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new SimpleDateFormat("yyyy-MM-dd").format(new Date())]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="0" y="60" width="960" height="80" uuid="26e9fcc4-e178-4b05-ab59-824b46676097"/>
+				<textField>
+					<reportElement x="0" y="0" width="950" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==true]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{mbom_lbl_footer_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="0" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4">
+						<printWhenExpression><![CDATA[$P{isMBOMReport}==false]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{ebom_lbl_footer_description}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="20" width="960" height="20" uuid="ba22a900-7e38-404e-b3a8-33895b4029a4"/>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_footer_copyright}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="320" y="60" width="60" height="15" uuid="de364abd-87a7-4ccb-8d04-8c0e61266cae"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Unicode MS" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA["© Valmet"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="0" y="60" width="60" height="15" uuid="b5c36769-0880-4295-b8f0-83b954811ccb">
+						<printWhenExpression><![CDATA[$P{IS_IGNORE_PAGINATION}==false]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font fontName="Arial Unicode MS" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="98" splitType="Stretch">
+			<printWhenExpression><![CDATA[$P{isSummaryRequired}==true]]></printWhenExpression>
+			<frame>
+				<reportElement x="0" y="0" width="960" height="45" uuid="bd53adea-4f2a-47f0-8694-d4480d930fcd"/>
+				<image>
+					<reportElement x="0" y="0" width="60" height="20" uuid="662a420c-5c09-416d-83bb-f41451fef01d"/>
+					<imageExpression><![CDATA[$P{imageLocation}]]></imageExpression>
+				</image>
+				<textField isBlankWhenNull="true">
+					<reportElement x="220" y="0" width="405" height="30" uuid="b4f125fc-7218-405a-bb0f-dcc31b4e4494"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial Unicode MS" size="15" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_summary_report}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="785" y="25" width="175" height="20" uuid="3ba026d4-581f-4272-bfbe-b42bbd4034c1"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial Unicode MS" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{lbl_internal}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="0" y="45" width="144" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="902732e7-27bc-4e5a-b303-14ccb36dd9e2">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+					<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="144" y="45" width="30" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="854bdc9f-b66c-453a-957e-0527c4ba535a">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_revision}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="zebra" mode="Opaque" x="174" y="45" width="50" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="de65a748-21b6-4ccd-a1e8-974e99d21999">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_reference}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="224" y="45" width="95" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="6c4c8f50-b4c7-4387-988d-a8fcfdf21d0b">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+					<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_drawing_number}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="320" y="45" width="50" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="6c4c8f50-b4c7-4387-988d-a8fcfdf21d0b">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="370" y="45" width="110" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="6c4c8f50-b4c7-4387-988d-a8fcfdf21d0b">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+					<property name="com.jaspersoft.studio.unit.x" value="inch"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_title}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="480" y="45" width="60" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="551aecda-0bf7-4d57-9093-77881e0f8a07">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_type}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="540" y="45" width="60" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="6c4c8f50-b4c7-4387-988d-a8fcfdf21d0b">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_standard}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="600" y="45" width="65" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="900ca7c1-f6e4-4487-976b-72f039c0a93c">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_material}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="665" y="45" width="40" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="900ca7c1-f6e4-4487-976b-72f039c0a93c">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_size}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="705" y="45" width="40" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="900ca7c1-f6e4-4487-976b-72f039c0a93c">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_weight}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="745" y="45" width="40" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="900ca7c1-f6e4-4487-976b-72f039c0a93c">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_length}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="785" y="45" width="35" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="900ca7c1-f6e4-4487-976b-72f039c0a93c">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_width}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="820" y="45" width="50" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="900ca7c1-f6e4-4487-976b-72f039c0a93c">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_total_pcs}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="870" y="45" width="50" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="3fb0e463-6acd-4fa2-a3b4-c6c053e901c3">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_qty}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="920" y="45" width="40" height="30" isPrintWhenDetailOverflows="true" backcolor="#FDFFBF" uuid="936523bd-a08d-4ec9-97fc-523cd91895cf">
+					<property name="net.sf.jasperreports.export.pdf.tag.th" value="full"/>
+					<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+					<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS" size="8" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lbl_col_unit}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="75" width="960" height="20" uuid="a4209b88-f36d-4b43-aedc-157ccd88180d"/>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="data.summaryReportData" uuid="8952bf2b-604b-4573-be13-0f9c9db7aec5">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.summaryReportData")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="20" width="960">
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="0" y="0" width="144" height="20" uuid="d3335e79-0024-4f17-a2ba-f9b2d127eeaf">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+								<property name="com.jaspersoft.studio.unit.leftIndent" value="inch"/>
+								<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+							</reportElement>
+							<box>
+								<leftPen lineWidth="1.0"/>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+								<paragraph leftIndent="2"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryName} == null ? "" : $F{summaryName}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="144" y="0" width="30" height="20" uuid="efaf4c6b-667a-4a72-a2c8-1eb295eb65b9">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryRev} == null ? "" : $F{summaryRev}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="224" y="0" width="96" height="20" uuid="a4e0079f-4bec-4c59-bb1b-e2b10e2ae7bd">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+								<property name="com.jaspersoft.studio.unit.width" value="inch"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryDrwNo} == null ? "" : $F{summaryDrwNo}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="320" y="0" width="50" height="20" uuid="a4e0079f-4bec-4c59-bb1b-e2b10e2ae7bd">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryStatus} == null ? "" : $F{summaryStatus}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="370" y="0" width="110" height="20" uuid="31e696c3-dc0c-4556-88ec-58896237df3e">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryTitle} == null ? "" : $F{summaryTitle}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="480" y="0" width="60" height="20" uuid="a3b82e37-8c11-4066-b243-1702f685ffb4">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summarySTD} ==null ? "" : ($F{summarySTD} .replace("Project_Specific" , "PS").replace("Product_Model","PM").replace("Standard","Std").replace("Project Specific" , "PS").replace("Product Model","PM").replace("Standard","Std"))]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="540" y="0" width="60" height="20" uuid="07e3ff2a-3832-4b06-9275-cb1ee8e51cfe">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryStandard}==null ? "" : $F{summaryStandard}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="600" y="0" width="65" height="20" uuid="e95e58e3-e88d-4307-9c4e-423d553cfed5">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryMaterial}==null ? "" : $F{summaryMaterial}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="665" y="0" width="40" height="20" uuid="ad4973ec-6cf0-43cc-a08b-a445d9a61350">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summarySize} == null ? "" : $F{summarySize}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="705" y="0" width="40" height="20" uuid="45f772c4-0247-40d5-910f-2bbe288a39e5">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryWeight} == null ? "" : $F{summaryWeight}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="745" y="0" width="40" height="20" uuid="40c94090-c177-4769-baa8-c10273ac811a">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryLength} == null ? "" : $F{summaryLength}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="785" y="0" width="35" height="20" uuid="d0e7ba5d-f495-4483-a725-dbadadf4fe38">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryWidth} == null ? "" : $F{summaryWidth}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="820" y="0" width="50" height="20" uuid="8618439d-ba69-49e5-84ed-4fa0078484f0">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{TotalPCS} == null ? "" : $F{TotalPCS}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="870" y="0" width="50" height="20" uuid="9516366f-7080-4ce9-9ae0-6fd65578f377">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{SummaryQty} == null ? "" : $F{SummaryQty}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="920" y="0" width="40" height="20" uuid="abedb7d5-6e14-48bd-9512-93105babead5">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+								<rightPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{summaryUnit} == null ? "" : $F{summaryUnit}]]></textFieldExpression>
+						</textField>
+						<textField isStretchWithOverflow="true">
+							<reportElement style="zebra" stretchType="RelativeToTallestObject" mode="Opaque" x="174" y="0" width="50" height="20" uuid="53754319-63ec-48c5-8f24-d7f3b910368f">
+								<property name="net.sf.jasperreports.export.xls.wrap.text" value="true"/>
+								<property name="net.sf.jasperreports.export.xls.auto.fit.row" value="true"/>
+							</reportElement>
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font fontName="Arial Unicode MS" size="6" pdfFontName="Arial Unicode MS" pdfEncoding="Identity-H"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{Reference Item}==null?"":$F{Reference Item}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

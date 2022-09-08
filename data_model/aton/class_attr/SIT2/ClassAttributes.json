@@ -1,0 +1,64 @@
+{
+    "attrNameToClassMapping": {
+        "Sales statistical group SSG": [
+            {
+                "physicalId": "D8B9063900007D3062CFB3E70006B90E",
+                "name": "Class-EPS1-00000728"
+            }
+        ],
+        "Aton Version": [
+            {
+                "physicalId": "D8B9063900007D3062CFB3E70006B90E",
+                "name": "Class-EPS1-00000728"
+            }
+        ],
+		"AUT Lifecycle Status":[
+            {
+                "physicalId": "D8B9063900007D3062CFB3E70006B90E",
+                "name": "Class-EPS1-00000728"
+            }
+        ],
+		"Spare part category VED":[
+            {
+                "physicalId": "D8B9063900007D3062CFB3E70006B90E",
+                "name": "Class-EPS1-00000728"
+            }
+        ],
+		"Type":[
+            {
+                "physicalId": "D8B9063900007D3062CFB3E70006B90E",
+                "name": "Class-EPS1-00000728"
+            }
+        ],
+		"Product Group":[
+            {
+                "physicalId": "D8B9063900007D3062CFB3E70006B90E",
+                "name": "Class-EPS1-00000728"
+            }
+        ],
+		"AS License Type":[
+            {
+                "physicalId": "D8B9063900007D3062CFB7060006B9BA",
+                "name": "Class-EPS1-00000233"
+            }
+        ],
+		"License Pricing Type":[
+            {
+                "physicalId": "D8B9063900007D3062CFB7060006B9BA",
+                "name": "Class-EPS1-00000233"
+            }
+        ],
+		"License Capacity Provider ID":[
+            {
+                "physicalId": "D8B9063900007D3062CFB7060006B9BA",
+                "name": "Class-EPS1-00000233"
+            }
+        ],
+		"License Weight Factor":[
+            {
+                "physicalId": "D8B9063900007D3062CFB7060006B9BA",
+                "name": "Class-EPS1-00000233"
+            }
+        ]
+    }
+}

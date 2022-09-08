@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemImportMapping>
+    <objects>
+        <object type="VAL_VALComponentMaterial">
+            <runTimeInterfaceList>DELAsmUnitRefRequired,DELAsmLotRefRequired,TRS_TermID,MBOM_MBOMERP,TRS_ShortEnglish,MBOM_MBOMContReference, TD_TechnicalDesignation</runTimeInterfaceList>
+            <attributes>
+                <attribute>
+                    <source_name>Serialized</source_name>
+                    <destination_name>DELAsmUnitRefRequired.V_SerialNumberRequired</destination_name>
+                    <values defaultValue="FALSE">
+                        <value src="No">FALSE</value>
+                        <value src="Yes">TRUE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Created From</source_name>
+                    <destination_name>PLMReference.V_fromExternalID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>status</source_name>
+                    <destination_name>current</destination_name>
+                    <values>
+                        <value src="Act">IN_WORK</value>
+                        <value src="Released">RELEASED</value>
+                        <value src="Expiring">RELEASED</value>
+                        <value src="Forbidden">OBSOLETE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Title in English</source_name>
+                    <destination_name>PLMEntity.V_Name</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>External Id</source_name>
+                    <destination_name>PLMEntity.PLM_ExternalID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Technical designation</source_name>
+                    <destination_name>TD_TechnicalDesignation.TD_TechnicalDesignation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length paddingChar="...">100</data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Inventory unit</source_name>
+                    <destination_name>MBOM_MBOMContReference.MBOM_Inventory_Unit</destination_name>
+                    <values>
+                        <value src="kg" runTimeInterfaceList="DELFmiContQuantity_Mass">kg</value>
+                        <value src="m" runTimeInterfaceList="DELFmiContQuantity_Length">m</value>
+                        <value src="m2" runTimeInterfaceList="DELFmiContQuantity_Area">m2</value>
+                        <value src="m3" runTimeInterfaceList="DELFmiContQuantity_Volume">m3</value>
+                        <value src="l" runTimeInterfaceList="DELFmiContQuantity_Volume">l</value>
+                        <value src="in" runTimeInterfaceList="DELFmiContQuantity_Length">in</value>
+                        <value src="in2" runTimeInterfaceList="DELFmiContQuantity_Area">in2</value>
+                        <value src="in3" runTimeInterfaceList="DELFmiContQuantity_Volume">in3</value>
+                        <value src="lb" runTimeInterfaceList="DELFmiContQuantity_Mass">lb</value>
+                        <value src="ft" runTimeInterfaceList="DELFmiContQuantity_Length">ft</value>
+                        <value src="ft2" runTimeInterfaceList="DELFmiContQuantity_Area">ft2</value>
+                        <value src="ft3" runTimeInterfaceList="DELFmiContQuantity_Volume">ft3</value>
+                        <value src="gal" runTimeInterfaceList="DELFmiContQuantity_Volume">gal</value>
+                        <value src="g" runTimeInterfaceList="DELFmiContQuantity_Mass">g</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Purchase unit</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_PurchaseUnit</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Make-standard</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_StandardorManufacturer</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Customer technical designation</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_CustomerTechnicalDesignation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Commercial Item Family</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_CommercialItemFamily</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Bundle ID</source_name>
+                    <destination_name>TRS_TermID.TRS_TermID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Short name in English</source_name>
+                    <destination_name>TRS_ShortEnglish.TRS_ShortNameEnglish</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Commodity code</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_Commodity_Code_CH</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Reference item</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_ReferenceItem</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Item size</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_ItemSize</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Spare part recommendation</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_Spare_Part_Recommendation</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Weight</source_name>
+                    <destination_name>DELFmiFunctionPPRContinuousReference.V_EstimatedWeight</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Material</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_Material</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Unit set</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_UnitSet</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Conversion factor</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_ConversionFactor</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Substitute Item</source_name>
+                    <destination_name>VAL_VALComponentMaterial.VAL_PDM_Substitute_Item</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>Transferred to ERPs</source_name>
+                    <destination_name>MBOM_MBOMERP.MBOM_TransferredtoERP</destination_name>
+                    <values defaultValue="FALSE">
+                        <value hasAny="LN1001">TRUE</value>
+                    </values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>originated</source_name>
+                    <destination_name>originated</destination_name>
+                    <data-type>Date</data-type>
+                    <data-format sourceFormat="dd-MM-yyyy HH:mm:ss" timezone="en">MM/dd/yyyy hh:mm:ss aaa</data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name></source_name>
+                    <destination_name>PLMEntity.V_discipline</destination_name>
+                    <values defaultValue="ProcessContinuousProvide"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>versionId</source_name>
+                    <destination_name>PLMReference.V_VersionID</destination_name>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>sec_level</source_name>
+                    <destination_name>PLMEntity.V_sec_level</destination_name>
+                    <values defaultValue="0"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name>order</source_name>
+                    <destination_name>PLMReference.V_order</destination_name>
+                    <values defaultValue="1"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name></source_name>
+                    <destination_name>organization</destination_name>
+                    <values defaultValue="VALMET_INTERNAL"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+                <attribute>
+                    <source_name></source_name>
+                    <destination_name>project</destination_name>
+                    <values defaultValue="GLOBAL_COMPONENTS_INTERNAL"></values>
+                    <data-type>String</data-type>
+                    <data-format></data-format>
+                    <description></description>
+                    <data_length></data_length>
+                    <is_required></is_required>
+                </attribute>
+            </attributes>
+        </object>
+    </objects>
+</itemImportMapping>

@@ -1,0 +1,37 @@
+
+# Maven 
+target/
+
+# IntelliJ project files 
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# eclipse project file
+.settings/
+.classpath
+.project
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# logs
+*.log
+
+# binary files
+*.rar
+*.zip
+*.jar
+*.exe
+*.war
+
+# Application folder
+dist/
+lib/
+

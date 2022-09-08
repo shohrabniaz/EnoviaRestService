@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<relationships>
+    <relationship FromType="CreateAssembly" name="DELFmiFunctionIdentifiedInstance" discriminator="" ToType="CreateAssembly">
+        <Interfaces>MBOM_MBOMERPInstance</Interfaces>
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <attributes>
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="CreateAssembly" name="DELFmiFunctionIdentifiedInstance" discriminator="" ToType="VAL_VALComponent">
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <Interfaces>MBOM_MBOMERPInstance</Interfaces>
+        <attributes>			
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="CreateAssembly" name="ProcessInstanceContinuous" discriminator="" ToType="VAL_VALComponentMaterial">
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <Interfaces>MBOM_MBOMERPInstance, MBOM_MBOMPDMContInstance</Interfaces>
+        <attributes>			
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Net quantity</source_name>
+                <destination_name>ProcessInstanceContinuous.V_UsageContCoeff</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[ProcessInstanceContinuous.V_UsageContCoeff]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Width</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Width</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Width]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Length</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Length</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Length]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="CreateAssembly" name="ProcessInstanceContinuous" discriminator="" ToType="ProcessContinuousCreateMaterial">
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <Interfaces>MBOM_MBOMERPInstance, MBOM_MBOMPDMContInstance</Interfaces>
+        <attributes>			
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Net quantity</source_name>
+                <destination_name>ProcessInstanceContinuous.V_UsageContCoeff</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[ProcessInstanceContinuous.V_UsageContCoeff]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Width</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Width</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Width]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Length</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Length</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Length]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="ProcessContinuousCreateMaterial" name="DELFmiFunctionIdentifiedInstance" discriminator="" ToType="CreateAssembly">
+        <Interfaces>MBOM_MBOMERPInstance</Interfaces>
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <attributes>
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="ProcessContinuousCreateMaterial" name="DELFmiFunctionIdentifiedInstance" discriminator="" ToType="VAL_VALComponent">
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <Interfaces>MBOM_MBOMERPInstance</Interfaces>
+        <attributes>			
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="ProcessContinuousCreateMaterial" name="ProcessInstanceContinuous" discriminator="" ToType="VAL_VALComponentMaterial">
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <Interfaces>MBOM_MBOMERPInstance, MBOM_MBOMPDMContInstance</Interfaces>
+        <attributes>			
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Net quantity</source_name>
+                <destination_name>ProcessInstanceContinuous.V_UsageContCoeff</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[ProcessInstanceContinuous.V_UsageContCoeff]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Width</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Width</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Width]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Length</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Length</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Length]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+    <relationship FromType="ProcessContinuousCreateMaterial" name="ProcessInstanceContinuous" discriminator="" ToType="ProcessContinuousCreateMaterial">
+        <discriminators default-relationship-name="default relationship name">
+            <discriminator>
+                <name>attribute-name</name>
+                <value>any value</value>
+                <relationship-name>whatever</relationship-name>
+            </discriminator>
+            <discriminator>
+                <name>attribute-name 2</name>
+                <value>any value 2</value>
+                <relationship-name>whatever 2</relationship-name>
+            </discriminator>
+        </discriminators>
+        <Interfaces>MBOM_MBOMERPInstance, MBOM_MBOMPDMContInstance</Interfaces>
+        <attributes>			
+            <attribute>
+                <source_name>Position</source_name>
+                <destination_name>MBOM_MBOMERPInstance.MBOM_Position</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[MBOM_MBOMERPInstance.MBOM_Position]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Net quantity</source_name>
+                <destination_name>ProcessInstanceContinuous.V_UsageContCoeff</destination_name>
+                <data_type>String</data_type>
+                <selectable>attribute[ProcessInstanceContinuous.V_UsageContCoeff]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>true</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Width</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Width</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Width]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+            
+            <attribute>
+                <source_name>Length</source_name>
+                <destination_name>MBOM_MBOMPDMContInstance.MBOM_Length</destination_name>
+                <data_type precision="-1" divisor="1000">real</data_type>
+                <selectable>attribute[MBOM_MBOMPDMContInstance.MBOM_Length]</selectable>
+                <data_format source_format=""></data_format>
+                <description></description>
+                <is_required>false</is_required>
+            </attribute>
+        </attributes>
+    </relationship>
+</relationships>

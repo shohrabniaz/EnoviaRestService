@@ -1,0 +1,56 @@
+Aton Version|string|false||
+AUT Lifecycle Status|string|false|Undefined|Active, Demand, Design, Discontinued, Draft, End of Life, Field Tests, Phase out, Pilot, Planning, Proof of Concept, RDReady, Specification, Technical Release Tests, Undefined
+Product Group|string|false||
+Sales statistical group SSG|string|false||
+Spare part category VED|string|false||
+Type|string|false|Undefined|Combination, Hardware, License, Licensed software, Product software, Service, Software, Undefined, Work
+
+Cardinality Max|integer|false||
+Cardinality Min|integer|false||
+Language AUT|string|false|Undefined|English, French, German, Italian, Nordic, Portuguese, Russian, Spanish, Turkish, Undefined
+Level AUT|string|false|Undefined|1, 2, 3, 4, 5, Undefined
+
+AS License Type|string|false|Undefined|Access, CapacityConsumer, CapacityProvider, Feature, Undefined
+License Capacity Provider ID|string|false||
+License Pricing Type|string|false|Undefined|Developer, Perpetual, PerpetualUpgrade, Subscription, Trial, Undefined
+License Weight Factor|real|false||
+
+Cost Actual|real|false||
+Cost Adjusted|real|false||
+Cost editable|boolean|false|FALSE|
+Cost Use Adjusted Cost|boolean|false|FALSE|
+Currency Automation|string|false|EUR|EUR
+LogisticsHours|real|false||
+Overage Rate|real|false||
+Price editable|boolean|false|FALSE|
+Reference price|real|false||
+SalesPrice|real|false||
+Spare Part Coefficient|real|false||
+
+AUT Lifecycle Status|string|false|Undefined|Active, Demand, Design, Discontinued, Draft, End of Life, Field Tests, Phase out, Pilot, Planning, Proof of Concept, RDReady, Specification, Technical Release Tests, Undefined
+Business|string|false|Undefined|Project, Service, Undefined
+Delivery valid to specific country|string|true||China, Poland, Russia, United States of America
+Export restrictions|string|false||
+Lock Description|boolean|false|TRUE|
+MainProduct|boolean|false|FALSE|
+Quantity Unit of Measure|string|false|Undefined|d Day, ft Feet, g Gram, h Hour, in Inch, in2 Squareinch, kg Kilogram, km Kilometer, ltr Liter, m Meter, m2 Squaremeter, mm Millimeter, pc Piece decimal, pcs Pieces integer, set Set, Undefined
+ReferenceCode|string|false||
+Replaced by|string|false||
+Sales Configurable|boolean|false|FALSE|
+Sales Instructions|string|false||
+Service Track|boolean|false|FALSE|
+Subscription Time Months|real|false||
+
+Legacy brand of Analyzers and Measurements|string|true||Undefined
+
+Legacy brand of Asset Performance Management|string|true||Undefined
+
+Legacy brand of Automation Services|string|true||Undefined
+
+Legacy brand of Distributed Control System|string|true||Undefined
+
+Legacy brand of Industrial internet solutions|string|true||Undefined
+
+Legacy brand of Industrial solutions and applications|string|true||Undefined
+
+Legacy brand of Quality Management|string|true||Undefined
